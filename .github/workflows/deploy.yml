@@ -29,5 +29,5 @@ jobs:
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
         with:
-          project: "example-project"
+          project: "clever-shrimp-70"
           entrypoint: "./main.ts"
