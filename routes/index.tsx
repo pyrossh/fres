@@ -16,7 +16,7 @@ export const handler: Handlers = {
 };
 
 export default function Home() {
-  const count = useSignal(3);
+  const count = useSignal(5);
   return (
     <div class="px-4 py-8 mx-auto bg-[#86efac]">
       <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
