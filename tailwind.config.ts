@@ -9,6 +9,9 @@ export default {
       mono: "monospace",
       logo: "Kaiti SC",
     },
+    data: {
+      current: "current",
+    },
     extend: {
       colors: {
         yellow: "#f1fa8c",

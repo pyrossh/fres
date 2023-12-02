@@ -17,17 +17,17 @@ import Header from "../components/Header.tsx";
 
 export default function App({ Component }: AppProps) {
   return (
-    <html lang="en">
+    <html lang="en" class="h-full w-full">
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="/styles.css" />
       </head>
-      <body class="bg-black-lighter">
+      <body class="leading-8 flex flex-1 flex-col font-normal text-lg sm:leading-7 m-0 bg-black-lighter">
         <Header />
         <main class="w-full h-full block bg-white">
           <div class="flex w-full flex-1 flex-row justify-center">
-            <div class="flex w-full flex-1 flex-row items-center max-w-5xl mt-4 mb-20 p-2">
+            <div class="flex w-full flex-1 flex-row items-center max-w-5xl mt-4 mb-20 p-4">
               <Component />
             </div>
           </div>
