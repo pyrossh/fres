@@ -1,27 +1,26 @@
-import { AppProps } from "$fresh/server.ts";
+import { PageProps } from "$fresh/server.ts";
+import { asset } from "$fresh/runtime.ts";
 import Footer from "../components/Footer.tsx";
 import Header from "../components/Header.tsx";
 
-// const SEO = () => (
-//   <title>fres</title>
-//   <link rel="canonical" href={Astro.url} />
-//     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-//     <link rel="icon" type="image/png" href="/favicon.png" />
-//     <meta name="author" content="pyrossh" />
-//     <meta name="keywords" content="pyros.sh,pyrossh,astro,website" />
-//     <meta property="og:site_name" content="pyros.sh" />
-//     <meta property="og:type" content="website" />
-//     <meta property="og:url" content={Astro.url} />
-//     <meta property="og:site_name" content="pyros.sh" />
-// )
-
-export default function App({ Component }: AppProps) {
+export default function App({ Component, url }: PageProps) {
   return (
     <html lang="en" class="h-full w-full">
       <head>
+        <title>pyros.sh</title>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles.css" />
+        <link rel="icon" type="image/png" href="/favicon.png" />
+        <meta name="author" content="pyrossh" />
+        <meta name="keywords" content="pyros.sh,pyrossh,astro,website" />
+        <meta property="og:site_name" content="pyros.sh" />
+        <meta property="og:type" content="website" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="canonical" href={url.toString()} />
+        <meta property="og:url" content={url.toString()} />
+        <meta property="og:site_name" content="pyros.sh" />
+        <link rel="icon" type="image/png" href={asset("/favicon.png")} />
+        <link rel="stylesheet" href={asset("/styles.css")} />
       </head>
       <body class="leading-8 flex flex-1 flex-col font-normal text-lg sm:leading-7 m-0 bg-black-lighter">
         <Header />

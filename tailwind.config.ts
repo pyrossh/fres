@@ -1,6 +1,8 @@
 import { type Config } from "tailwindcss";
+import children from "tailwind-children";
 
 export default {
+  plugins: [children],
   content: ["{routes,islands,components}/**/*.{ts,tsx}"],
   theme: {
     fontFamily: {

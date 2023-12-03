@@ -1,19 +1,14 @@
 import { useSignal } from "@preact/signals";
 import { Handlers } from "$fresh/server.ts";
 import Slide from "../components/Slide.tsx";
-import Counter from "../islands/Counter.tsx";
+import ProjectsIcon from "../components/icons/ProjectsIcon.tsx";
+import TreeIcon from "../components/icons/TreeIcon.tsx";
+import ContactIcon from "../components/icons/ContactIcon.tsx";
 import { asset, Head } from "$fresh/runtime.ts";
 
 export const handler: Handlers = {
   async GET(req, ctx) {
     return await ctx.render();
-  },
-  async POST(req, ctx) {
-    const form = await req.formData();
-    return new Response(null, {
-      status: 303,
-      headers: { location: "/" },
-    });
   },
 };
 
@@ -53,8 +48,8 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <div class="flex items-center mt-4 mb-4">
-            {/* <Icon name="ant-design:project-outlined" /> */}
+          <div class="flex items-center mt-8 mb-4 [&>svg]:mr-2">
+            <ProjectsIcon size="36" />
             <h2 class="my-0 text-3xl font-bold">Projects</h2>
           </div>
           <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
@@ -122,8 +117,8 @@ export default function Home() {
               </p>
             </Slide>
             <section class="flex flex-col flex-1">
-              <div class="text-3xl font-bold">
-                {/* <Icon name="typcn:tree" /> */}
+              <div class="flex text-3xl font-bold child-svg:mr-2">
+                <TreeIcon size="36" />
                 Interests
               </div>
               <div class="ml-1 mt-6 mb-4">
@@ -145,30 +140,29 @@ export default function Home() {
               </ul>
             </section>
             <section class="flex flex-col flex-1">
-              <div class="text-3xl font-bold">
-                {/* <Icon name="mdi:contact-outline" /> */}
+              <div class="flex text-3xl font-bold child-svg:mr-2">
+                <ContactIcon size="36" />
                 Contact
               </div>
               <div class="ml-1 mt-6 mb-4">
                 You can contact me through any of these methods
               </div>
-              <ul class="grid gap-1 grid-cols-1 ml-4 [&>li]:list-disc [&>li]:px-0 [&>li]:py-1 [&>a]:ml-4">
-                <li>
+              <div class="child:flex child:mb-3 child:ml-2 heir-a:ml-4 heir-a:text-blue">
+                <div>
                   Email:
                   <a href="mailto:pyros2097@gmail.com">pyros2097@gmail.com</a>
-                </li>
-                <li>
+                </div>
+                <div>
                   Github:
                   <a href="https://github.com/pyrossh">pyrossh</a>
-                </li>
-                <li>
+                </div>
+                <div>
                   LinkedIn:
                   <a href="https://www.linkedin.com/in/peter-john-in">
-                    {" "}
                     pyrossh
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </section>
           </div>
         </div>
