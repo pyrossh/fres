@@ -21,7 +21,9 @@ export default function Header() {
               posts
             </a>
           </div>
-          <SocialLinks />
+          <div class="hidden sm:flex">
+            <SocialLinks />
+          </div>
         </div>
       </nav>
     </header>
