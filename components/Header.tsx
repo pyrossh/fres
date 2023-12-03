@@ -12,16 +12,13 @@ export default function Header() {
             <span class="mr-1 font-logo font-bold">木</span> pyros.sh
           </a>
           <div class="flex flex-row flex-1 items-center text-white sm:[&>a]:mx-1 [&>a]:px-2 [&>a:hover]:bg-gray-600 data-current:child:bg-gray-600">
-            <a href="/dev" rel="prefetch">
-              dev
+            <div>|</div>
+            <a href="/cv" rel="prefetch">
+              cv
             </a>
             <div>|</div>
-            <a href="/ref" rel="prefetch">
-              ref
-            </a>
-            <div>|</div>
-            <a href="/blog" rel="prefetch">
-              blog
+            <a href="/posts" rel="prefetch">
+              posts
             </a>
           </div>
           <SocialLinks />

@@ -21,8 +21,6 @@ export default {
         "black-lighter": "#1f1f1f",
         "black-light": "#313a3d",
         "yellow-dark": "#858579",
-        blue: "#0645ad",
-        "blue-light": "#0e81c7",
         "slider-bg": "#f0ede2",
       },
     },

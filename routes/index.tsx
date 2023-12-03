@@ -1,19 +1,12 @@
-import { useSignal } from "@preact/signals";
-import { Handlers } from "$fresh/server.ts";
 import Slide from "../components/Slide.tsx";
 import ProjectsIcon from "../components/icons/ProjectsIcon.tsx";
 import TreeIcon from "../components/icons/TreeIcon.tsx";
 import ContactIcon from "../components/icons/ContactIcon.tsx";
+import HardwareIcon from "../components/icons/HardwareIcon.tsx";
+import SoftwareIcon from "../components/icons/SoftwareIcon.tsx";
 import { asset, Head } from "$fresh/runtime.ts";
 
-export const handler: Handlers = {
-  async GET(req, ctx) {
-    return await ctx.render();
-  },
-};
-
 export default function Home() {
-  const count = useSignal(5);
   return (
     <div class="mx-auto">
       <Head>
@@ -48,7 +41,7 @@ export default function Home() {
           </p>
         </div>
         <div>
-          <div class="flex items-center mt-8 mb-4 [&>svg]:mr-2">
+          <div class="flex items-center mt-8 mb-4 child-svg:mr-2 child-svg:text-pink-800">
             <ProjectsIcon size="36" />
             <h2 class="my-0 text-3xl font-bold">Projects</h2>
           </div>
@@ -117,11 +110,115 @@ export default function Home() {
               </p>
             </Slide>
             <section class="flex flex-col flex-1">
-              <div class="flex text-3xl font-bold child-svg:mr-2">
+              <div class="flex text-3xl font-bold child-svg:mr-2 child-svg:text-green-800">
+                <HardwareIcon size="36" />
+                Hardware Setup
+              </div>
+              <div class="ml-1 mt-6 mb-2">My current hardware setup is</div>
+              <ul class="ml-1.5">
+                <li>
+                  <strong>Laptop:</strong> M2 Macbook Air
+                </li>
+                <li>
+                  <strong>CPU:</strong> Apple M2 (8 cores, 8 threads)
+                </li>
+                <li>
+                  <strong>RAM:</strong> 16GB
+                </li>
+                <li>
+                  <strong>SSD:</strong> 512GB
+                </li>
+              </ul>
+            </section>
+            <section class="flex flex-col flex-1">
+              <div class="flex text-3xl font-bold child-svg:mr-2 child-svg:text-red-800">
+                <SoftwareIcon size="36" />
+                Software Setup
+              </div>
+              <div class="ml-1 mt-6 mb-2">
+                My current list of daily applications
+              </div>
+              <ul class="grid gap-2 grid-cols-3 ml-4 child:list-disc child:px-0 child:py-1 heir-a:text-blue-800">
+                <li>
+                  <a
+                    href="https://github.com/exelban/stats"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Menubar Stats
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/brave/brave-browser"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Brave Browser
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/microsoft/vscode"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    VS Code IDE
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/helix-editor/helix"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Helix
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/fish-shell/fish-shell"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Fish Shell
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://github.com/gnachman/iTerm2"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    iTerm2
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://colorslurp.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Color Slurp
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.vectornator.io"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Curve
+                  </a>
+                </li>
+              </ul>
+            </section>
+            <section class="flex flex-col flex-1">
+              <div class="flex text-3xl font-bold child-svg:mr-2 child-svg:text-amber-900">
                 <TreeIcon size="36" />
                 Interests
               </div>
-              <div class="ml-1 mt-6 mb-4">
+              <div class="ml-1 mt-6 mb-2">
                 These are some of the stuff I work on
               </div>
               <ul class="grid gap-2 grid-cols-3 ml-4 [&>li]:list-disc [&>li]:px-0 [&>li]:py-1 [&>li:marker]:text-black">
@@ -140,14 +237,14 @@ export default function Home() {
               </ul>
             </section>
             <section class="flex flex-col flex-1">
-              <div class="flex text-3xl font-bold child-svg:mr-2">
+              <div class="flex text-3xl font-bold child-svg:mr-2 child-svg:text-cyan-950">
                 <ContactIcon size="36" />
                 Contact
               </div>
-              <div class="ml-1 mt-6 mb-4">
+              <div class="ml-1 mt-6 mb-2">
                 You can contact me through any of these methods
               </div>
-              <div class="child:flex child:mb-3 child:ml-2 heir-a:ml-4 heir-a:text-blue">
+              <div class="child:flex child:mb-3 child:ml-2 heir-a:ml-4 heir-a:text-blue-800">
                 <div>
                   Email:
                   <a href="mailto:pyros2097@gmail.com">pyros2097@gmail.com</a>
@@ -167,23 +264,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-      {
-        /* <div class="max-w-screen-md mx-auto flex flex-col items-center justify-center">
-        <img
-          class="my-6"
-          src="/logo.svg"
-          width="128"
-          height="128"
-          alt="the Fresh logo: a sliced lemon dripping with juice"
-        />
-        <h1 class="text-4xl font-bold">Welcome to Fresh</h1>
-        <p class="my-4">
-          Try updating this message in the
-          <code class="mx-2">./routes/index.tsx</code> file, and refresh.
-        </p>
-        <Counter count={count} />
-      </div> */
-      }
     </div>
   );
 }
