@@ -4,7 +4,7 @@ import LinkedInIcon from "./icons/LinkedInIcon.tsx";
 
 export default function SocialLinks() {
   return (
-    <div class="flex hover:no-underline text-white [&>a]:ml-5">
+    <div class="flex hover:no-underline text-white child:mx-2  sm:child:ml-5">
       <a href="https://linkedin.com/in/pyrossh" title="My LinkedIn profile">
         <LinkedInIcon />
       </a>

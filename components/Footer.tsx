@@ -4,7 +4,7 @@ import LemonDrop from "../islands/LemonDrop.tsx";
 export default function Footer() {
   return (
     <footer class="flex w-full flex-1 flex-row justify-center text-xl leading-6">
-      <div class="flex flex-row flex-1 p-4 max-w-5xl text-yellow">
+      <div class="flex flex-row flex-1 py-4 max-w-5xl text-yellow">
         <div class="flex-1">
           <SocialLinks />
         </div>
@@ -12,7 +12,7 @@ export default function Footer() {
           <span class="text-base text-yellow hover:no-underline">
             powered by
           </span>
-          <a class="ml-2 -mt-3" href="https://fresh.deno.dev">
+          <a class="mx-2 -mt-3" href="https://fresh.deno.dev">
             <LemonDrop />
           </a>
         </div>
