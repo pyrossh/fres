@@ -206,7 +206,7 @@ export default function Home() {
                 <TreeIcon size="36" />
                 <h2>Interests</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-3 text-center mt-4 ml-2 child:bg-gray-200 child:p-1">
+              <ul class="grid gap-2 grid-cols-3 text-center mt-4 ml-2 child:bg-slate-100 child:p-1">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Tailwind</li>
@@ -226,24 +226,27 @@ export default function Home() {
                 <ContactIcon size="36" />
                 <h2>Contact</h2>
               </div>
-              <div class="mt-4 ml-1 child:flex child:mb-3 heir-a:ml-1 heir-a:text-blue-800">
-                <div>
-                  Email:
-                  <a href="mailto:pyros2097@gmail.com">pyros2097@gmail.com</a>
-                </div>
-                <div>
-                  Github:
-                  <a href="https://github.com/pyrossh">
+              <ul class="grid gap-2 grid-cols-1 text-lg text-left mt-4 ml-2 heir-strong:mr-2 child:bg-slate-100 child:p-2">
+                <li>
+                  <strong>Email:</strong>
+                  <span>pyros2097@gmail.com</span>
+                </li>
+                <li>
+                  <strong>Github:</strong>
+                  <a class="text-blue-900" href="https://github.com/pyrossh">
                     https://github.com/pyrossh
                   </a>
-                </div>
-                <div>
-                  LinkedIn:
-                  <a href="https://www.linkedin.com/in/peter-john-in">
+                </li>
+                <li>
+                  <strong>LinkedIn:</strong>
+                  <a
+                    class="text-blue-900"
+                    href="https://www.linkedin.com/in/peter-john-in"
+                  >
                     https://www.linkedin.com/in/pyrossh
                   </a>
-                </div>
-              </div>
+                </li>
+              </ul>
             </section>
           </div>
         </div>
