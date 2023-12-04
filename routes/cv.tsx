@@ -159,10 +159,7 @@ export default function CV() {
           <h5>
             Numberz integrates banking with your day-2-day business work-flows
             freeing up a lot of effort, time and heart-burn, to help your
-            business grow! You’ll never have to spend time syncing information
-            between different systems. Save and record receipts &amp; spends
-            with a single tap, automatically categorise transactions for
-            book-keeping and easily share information with your accountant.
+            business grow.
           </h5>
           <ul>
             <li>
@@ -210,11 +207,7 @@ export default function CV() {
           <h4>Full Stack Developer, Apr 2014 - Sept 2016</h4>
           <h5>
             Playlyfe is an online Gamification Platform which empowers anyone to
-            design and implement a gamified system.This platform allows a normal
-            user to convert a gamified system's design into a fully functional
-            web-application complete with teams, real-time notifications,
-            leaderboards and many more features. Made Critical decisions on what
-            tech stack to switch to for our gamification product Catalyst.
+            design and implement a gamified system.
           </h5>
           <ul>
             <li>
