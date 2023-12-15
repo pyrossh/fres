@@ -103,22 +103,10 @@ export default function Home() {
                 <HardwareIcon size="32" />
                 <h2>Hardware</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-2 text-center mt-4 ml-2 heir-a:text-blue-900 child:bg-gray-200 child:p-1">
-                <li>
-                  <strong>Laptop:</strong> M2 Macbook Air
-                </li>
-                <li>
-                  <strong>CPU:</strong> Apple Silicon M2
-                </li>
-                <li>
-                  <strong>RAM:</strong> 16GB
-                </li>
-                <li>
-                  <strong>SSD:</strong> 512GB
-                </li>
+              <ul class="grid gap-2 grid-cols-1 text-center mt-4 heir-a:text-blue-900 child:bg-gray-200 child:p-1">
+                <li>M2 Macbook Air</li>
                 <li>Raspberry Pi 4B</li>
                 <li>Raspberry Pi Zero 2W</li>
-                <li>M5Stack</li>
               </ul>
             </section>
             <section>
@@ -126,7 +114,7 @@ export default function Home() {
                 <SoftwareIcon size="32" />
                 <h2>Software</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-3 text-center mt-4 ml-2 heir-a:text-blue-900 child:bg-gray-200 child:p-1">
+              <ul class="grid gap-2 grid-cols-3 text-center mt-4 heir-a:text-blue-900 child:bg-gray-200 child:p-1">
                 <li>
                   <a
                     href="https://github.com/exelban/stats"
@@ -142,7 +130,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Brave Browser
+                    Brave
                   </a>
                 </li>
                 <li>
@@ -169,7 +157,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Fish Shell
+                    Fish
                   </a>
                 </li>
                 <li>
@@ -187,7 +175,7 @@ export default function Home() {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    Color Slurp
+                    Slurp
                   </a>
                 </li>
                 <li>
@@ -206,7 +194,7 @@ export default function Home() {
                 <TreeIcon size="36" />
                 <h2>Interests</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-3 text-center mt-4 ml-2 child:bg-slate-100 child:p-1">
+              <ul class="grid gap-2 grid-cols-3 text-center mt-4 child:bg-slate-100 child:p-1">
                 <li>HTML</li>
                 <li>CSS</li>
                 <li>Tailwind</li>
@@ -226,7 +214,7 @@ export default function Home() {
                 <ContactIcon size="36" />
                 <h2>Contact</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-1 text-lg text-left mt-4 ml-2 heir-strong:mr-2 child:bg-slate-100 child:p-2">
+              <ul class="grid gap-2 grid-cols-1 text-lg text-left mt-4 heir-strong:mr-2 child:bg-slate-100 child:p-2">
                 <li>
                   <strong>Email:</strong>
                   <span>pyros2097@gmail.com</span>
