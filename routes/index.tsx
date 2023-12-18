@@ -6,7 +6,7 @@ import HardwareIcon from "../components/icons/HardwareIcon.tsx";
 import SoftwareIcon from "../components/icons/SoftwareIcon.tsx";
 import GooglePlayIcon from "../components/icons/GooglePlayIcon.tsx";
 import AppStoreIcon from "../components/icons/AppStoreIcon.tsx";
-import { Head } from "$fresh/runtime.ts";
+import { asset, Head } from "$fresh/runtime.ts";
 
 export default function Home() {
   return (
@@ -21,7 +21,7 @@ export default function Home() {
       <div class="heir-h2:text-xl heir-h2:font-bold heir-h2:middle">
         <h1 class="text-3xl font-bold mb-4">Hello!</h1>
         <p>
-          I'm{" "}
+          I{"'"}m{" "}
           <a class="underline" href="https://www.linkedin.com/in/peter-john-in">
             <strong>Peter John</strong>
           </a>
@@ -30,7 +30,7 @@ export default function Home() {
         </p>
         <p>
           I currently work for Equal Experts. I have a strong passion for golang
-          but I also work with react and nodejs. I've mostly worked with
+          but I also work with react and nodejs. I{"'"}ve mostly worked with
           startups and product based companies. I have gained a lot of domain
           specific knowledge in healthcare and finance during these startup
           years.
@@ -39,8 +39,8 @@ export default function Home() {
           I like to work on open source and hobby projects. Over the course of
           {" "}
           {new Date().getFullYear() - 2014}{" "}
-          years I've accumulated a lot of useful projects used by many people
-          around the world.
+          years I{"'"}ve accumulated a lot of useful projects used by many
+          people around the world.
         </p>
         <div>
           <div class="flex items-center mt-8 mb-4 child-svg:mr-2 child-svg:text-pink-800">
@@ -114,7 +114,7 @@ export default function Home() {
                 <SoftwareIcon size="32" />
                 <h2>Software</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-3 text-center mt-4 heir-a:text-blue-900 child:bg-gray-200 child:p-1">
+              <ul class="grid gap-2 grid-cols-3 text-center mt-4 heir-img:w-12 heir-a:text-base heir-a:text-blue-900 heir-a:flex heir-a:flex-col heir-a:items-center child:bg-gray-200 child:p-2 child:pb-4">
                 <li>
                   <a
                     href="https://github.com/exelban/stats"
@@ -122,6 +122,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Stats
+                    <img src={asset("/logos/stats.png")} />
                   </a>
                 </li>
                 <li>
@@ -131,6 +132,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Brave
+                    <img src={asset("/logos/brave.png")} />
                   </a>
                 </li>
                 <li>
@@ -140,6 +142,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     VS Code
+                    <img src={asset("/logos/code.png")} />
                   </a>
                 </li>
                 <li>
@@ -149,6 +152,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Helix
+                    <img src={asset("/logos/helix.png")} />
                   </a>
                 </li>
                 <li>
@@ -158,6 +162,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Fish
+                    <img src={asset("/logos/fish.png")} />
                   </a>
                 </li>
                 <li>
@@ -167,6 +172,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     iTerm2
+                    <img src={asset("/logos/iterm.png")} />
                   </a>
                 </li>
                 <li>
@@ -176,6 +182,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Slurp
+                    <img class="w-12" src={asset("/logos/slurp.png")} />
                   </a>
                 </li>
                 <li>
@@ -185,6 +192,7 @@ export default function Home() {
                     rel="noopener noreferrer"
                   >
                     Curve
+                    <img class="w-12" src={asset("/logos/curve.png")} />
                   </a>
                 </li>
               </ul>
