@@ -110,7 +110,7 @@ export default function Home() {
               </ul>
             </section>
             <section>
-              <div class="flex items-center child-svg:mr-2 child-svg:text-red-800">
+              <div class="flex items-center child-svg:mr-2 child-svg:text-blue-800">
                 <SoftwareIcon size="32" />
                 <h2>Software</h2>
               </div>
@@ -222,7 +222,7 @@ export default function Home() {
                 <ContactIcon size="36" />
                 <h2>Contact</h2>
               </div>
-              <ul class="grid gap-2 grid-cols-1 text-lg text-left mt-4 heir-strong:mr-2 child:bg-slate-100 child:p-2">
+              <ul class="grid gap-2 grid-cols-1 text-lg text-left mt-4 heir-strong:mr-2 child:bg-slate-100 child:p-2 child:flex child:flex-col child:sm:flex-row">
                 <li>
                   <strong>Email:</strong>
                   <span>pyros2097@gmail.com</span>
