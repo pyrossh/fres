@@ -16,13 +16,12 @@ export async function handler(req: Request, ctx: FreshContext) {
     !ipRes.bogon
   ) {
     const pathname = new URL(req.url).pathname;
-    console.log(ipRes);
     const referer = req.headers.get("referer") || "";
     const parser = new UAParser(userAgent);
     recordVisit(
       pathname,
       referer,
-      "India",
+      ipRes.country,
       parser.getOS().name,
       parser.getBrowser().name,
     );
