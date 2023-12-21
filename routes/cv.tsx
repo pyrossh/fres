@@ -109,8 +109,8 @@ export default function CV() {
                     in the Reporting Center
                   </li>
                   <li>
-                    Created a Groovy Script to automate creating ACL's in
-                    sandbox authorization framework
+                    Created a Groovy Script to automate creating ACL in sandbox
+                    authorization framework
                   </li>
                   <li>
                     Integrated Camunda Workflow Engine into Zeta services in
@@ -122,7 +122,7 @@ export default function CV() {
                   </li>
                   <li>
                     Built a custom k8s CRD using the operator framework to
-                    automate creating ACL's in sandbox using custom resources
+                    automate creating ACL in sandbox using custom resources
                   </li>
                 </ul>
               </li>

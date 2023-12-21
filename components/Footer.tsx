@@ -3,7 +3,7 @@ import LemonDrop from "../islands/LemonDrop.tsx";
 
 export default function Footer() {
   return (
-    <footer class="flex w-full flex-1 flex-row justify-center text-xl leading-6">
+    <footer class="flex w-full flex-1 flex-row justify-center text-xl leading-6 bg-black-lighter">
       <div class="flex flex-row flex-1 py-4 max-w-5xl text-yellow">
         <div class="flex-1">
           <SocialLinks />

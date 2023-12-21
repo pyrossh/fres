@@ -8,6 +8,7 @@ import * as $_middleware from "./routes/_middleware.ts";
 import * as $cv from "./routes/cv.tsx";
 import * as $index from "./routes/index.tsx";
 import * as $posts from "./routes/posts.tsx";
+import * as $stats from "./routes/stats.tsx";
 import * as $Counter from "./islands/Counter.tsx";
 import * as $LemonDrop from "./islands/LemonDrop.tsx";
 import { type Manifest } from "$fresh/server.ts";
@@ -20,6 +21,7 @@ const manifest = {
     "./routes/cv.tsx": $cv,
     "./routes/index.tsx": $index,
     "./routes/posts.tsx": $posts,
+    "./routes/stats.tsx": $stats,
   },
   islands: {
     "./islands/Counter.tsx": $Counter,
