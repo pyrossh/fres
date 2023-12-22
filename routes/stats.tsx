@@ -30,7 +30,7 @@ export default function Stats({ data }: PageProps<AnalyticsData>) {
         </div>
         <div class="grid grid-cols-2 gap-8">
           <List title="Pages" entries={data.pages} />
-          <List title="Countries" entries={data.countries} />
+          <List title="Countries" entries={data.countries} flag />
         </div>
         <div class="grid grid-cols-2 gap-8 mt-8">
           <List title="OS" entries={data.os} />

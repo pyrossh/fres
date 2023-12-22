@@ -15,7 +15,6 @@ export async function handler(req: Request, ctx: FreshContext) {
     .filter((a) => !["/_404", "/_app", "/_middleware.ts"].includes(a));
   const userAgent = req.headers.get("user-agent") || "";
   const referer = req.headers.get("referer") || "";
-  console.log("referer", referer, req.referrer);
   const pathname = new URL(req.url).pathname;
   if (
     registeredRoutes.includes(pathname) &&

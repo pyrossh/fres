@@ -1,6 +1,6 @@
 import UAParser from "ua-parser-js";
 import IPinfoWrapper from "ipinfo";
-import { getCountryData, getEmojiFlag } from "countries-list";
+import { getCountryData } from "countries-list";
 
 const ipInfoClient = new IPinfoWrapper("3f197e26fa9210");
 const kv = await Deno.openKv();
@@ -18,16 +18,17 @@ export const recordVisit = async (
     "analytics",
     `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`,
   ];
-  console.log(parser.getBrowser());
+  const newVisitor = await kv.get(["visitor", hostname]);
   const keysToIncrement = [
-    ["visitors"],
-    ["views"],
-    ["pages", pathname],
-    ["referers", referer],
-    ["countries", ipRes.countryCode],
-    ["os", parser.getOS().name],
-    ["browsers", parser.getBrowser().name],
-  ].filter((arr) => arr[arr.length - 1]);
+    newVisitor.value ? [] : ["vistor", hostname],
+    [...prefix, "visitors"],
+    [...prefix, "views"],
+    [...prefix, "pages", pathname],
+    [...prefix, "referers", referer],
+    [...prefix, "countries", ipRes.countryCode],
+    [...prefix, "os", parser.getOS().name],
+    [...prefix, "browsers", parser.getBrowser().name],
+  ].filter((arr) => arr.length === 0 || arr[arr.length - 1]);
   await kv
     .atomic()
     .mutate(
@@ -98,7 +99,7 @@ export const getAnalyticsData = async () => {
     }
     if (entry.key[2] === "countries") {
       const code = entry.key[3] as string;
-      const name = getEmojiFlag(code) + getCountryData(code).name;
+      const name = getCountryData(code).name;
       addMetric(data.countries, name, entry.value as number);
     }
   }
