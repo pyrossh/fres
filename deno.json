@@ -25,7 +25,8 @@
     "$std/": "https://deno.land/std@0.193.0/",
     "ua-parser-js": "https://esm.sh/ua-parser-js@1.0.37",
     "isbot": "https://esm.sh/isbot@3.7.1",
-    "ipinfo": "https://esm.sh/node-ipinfo@3.5.1"
+    "ipinfo": "https://esm.sh/node-ipinfo@3.5.1",
+    "countries-list": "https://esm.sh/countries-list@3.0.6"
   },
   "compilerOptions": { "jsx": "react-jsx", "jsxImportSource": "preact" }
 }

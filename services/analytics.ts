@@ -1,5 +1,6 @@
 import UAParser from "ua-parser-js";
 import IPinfoWrapper from "ipinfo";
+import { getCountryData, getEmojiFlag } from "countries-list";
 
 const ipInfoClient = new IPinfoWrapper("3f197e26fa9210");
 const kv = await Deno.openKv();
@@ -10,7 +11,7 @@ export const recordVisit = async (
   pathname: string,
   referer: string,
 ) => {
-  const ipRes: { country: string } = await ipInfoClient.lookupIp(hostname);
+  const ipRes: { countryCode: string } = await ipInfoClient.lookupIp(hostname);
   const parser = new UAParser(userAgent);
   const now = new Date();
   const prefix = [
@@ -23,7 +24,7 @@ export const recordVisit = async (
     ["views"],
     ["pages", pathname],
     ["referers", referer],
-    ["countries", ipRes.country],
+    ["countries", ipRes.countryCode],
     ["os", parser.getOS().name],
     ["browsers", parser.getBrowser().name],
   ].filter((arr) => arr[arr.length - 1]);
@@ -83,7 +84,7 @@ export const getAnalyticsData = async () => {
     if (entry.key[2] === "visitors") {
       data.vistors = entry.value as number;
     }
-    if (entry.key[2] === "browser") {
+    if (entry.key[2] === "browsers") {
       addMetric(data.browsers, entry.key[3] as string, entry.value as number);
     }
     if (entry.key[2] === "os") {
@@ -96,7 +97,9 @@ export const getAnalyticsData = async () => {
       addMetric(data.referrers, entry.key[3] as string, entry.value as number);
     }
     if (entry.key[2] === "countries") {
-      addMetric(data.countries, entry.key[3] as string, entry.value as number);
+      const code = entry.key[3] as string;
+      const name = getEmojiFlag(code) + getCountryData(code).name;
+      addMetric(data.countries, name, entry.value as number);
     }
   }
   return data;
