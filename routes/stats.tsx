@@ -23,8 +23,8 @@ export default function Stats({ data }: PageProps<AnalyticsData>) {
         <div class="charts no-select hidden">
           <div class="headline">
             <div class="metrics">
-              <Tile title="Visitors" value={data.vistors.toString()} />
-              <Tile title="Views" value={data.views.toString()} />
+              <Tile title="Unique Visitors" value={data.vistors.toString()} />
+              <Tile title="Page Views" value={data.views.toString()} />
             </div>
           </div>
         </div>
