@@ -1,26 +1,32 @@
+import UAParser from "ua-parser-js";
+import IPinfoWrapper from "ipinfo";
+
+const ipInfoClient = new IPinfoWrapper("3f197e26fa9210");
 const kv = await Deno.openKv();
 
 export const recordVisit = async (
+  hostname: string,
+  userAgent: string,
   pathname: string,
   referer: string,
-  country: string,
-  os: string,
-  browser: string,
 ) => {
+  const ipRes: { country: string } = await ipInfoClient.lookupIp(hostname);
+  const parser = new UAParser(userAgent);
   const now = new Date();
   const prefix = [
     "analytics",
     `${now.getFullYear()}-${now.getMonth() + 1}-${now.getDate()}`,
   ];
+  console.log(parser.getBrowser());
   const keysToIncrement = [
     ["visitors"],
     ["views"],
     ["pages", pathname],
     ["referers", referer],
-    ["countries", country],
-    ["os", os],
-    ["browsers", browser],
-  ];
+    ["countries", ipRes.country],
+    ["os", parser.getOS().name],
+    ["browsers", parser.getBrowser().name],
+  ].filter((arr) => arr[arr.length - 1]);
   await kv
     .atomic()
     .mutate(
@@ -50,11 +56,7 @@ export interface AnalyticsData {
   browsers: AnalyticsDataPoint[];
 }
 
-const addMetric = (
-  arr: AnalyticsDataPoint[],
-  name: string,
-  count: number,
-) => {
+const addMetric = (arr: AnalyticsDataPoint[], name: string, count: number) => {
   const index = arr.findIndex((it) => it.name === name);
   if (index > -1) {
     arr[index].count += count;
