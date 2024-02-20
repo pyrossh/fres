@@ -1,6 +1,6 @@
 {
   "recommendations": [
-    "denoland.vscode-deno",
-    "bradlc.vscode-tailwindcss"
+    "svelte.svelte-vscode",
+    "antfu.unocss"
   ]
 }

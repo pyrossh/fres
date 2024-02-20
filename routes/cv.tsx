@@ -7,52 +7,7 @@ export default function CV() {
         <title>pyros.sh | CV</title>
         <meta name="description" content="Peter John's CV" />
       </Head>
-      <style
-        dangerouslySetInnerHTML={{
-          __html: `
-        .container {
-          font-family: system-ui;
-        }
-      
-        b {
-          font-weight: 700;
-        }
-      
-        ul {
-          margin: 0.5rem;
-          padding-left: 2rem;
-          @media (--mobile) {
-            margin: 0.5rem;
-            padding-left: 1rem;
-          }
-        }
-      
-        li {
-          list-style-type: disc;
-          list-style-position: outside;
-        }
-      
-        h3 {
-          font-weight: 700;
-          margin-top: 0.5rem;
-        }
-      
-        h4 {
-          font-weight: 500;
-          margin-top: 0.5rem;
-        }
-      
-        h5 {
-          font-size: 1.25rem;
-          line-height: 1.75rem;
-          font-weight: 400;
-          margin-top: 0.5rem;
-          margin-bottom: 1rem;
-        }
-        `,
-        }}
-      />
-      <div>
+      <div class="cv-page">
         <section>
           <h3>Equal Experts</h3>
           <h4>Software Developer, Oct 2018 - present</h4>
@@ -67,12 +22,25 @@ export default function CV() {
                 <b>John Lewis</b>
                 <ul>
                   <li>
-                    Built the new Product Description Page (PDP) for Simple
-                    Carpets using nextjs in home interiors
+                    Built a social quiz game to improve engagement across the
+                    website
                   </li>
                   <li>
-                    Helped build, improve, and run AB experiments in the
-                    customer services and my orders pages in customer hub
+                    Implemented new functionality in customer self serve
+                    functions like returns, cancellations, tracking.
+                  </li>
+                  <li>
+                    Refactored the old self serve reactjs app to use nextjs and
+                    removed a large redux dependency thereby simplifying the
+                    codebase.
+                  </li>
+                  <li>
+                    Ran many experiments in the customer services and order
+                    pages to improve our metrics and reduce contacts.
+                  </li>
+                  <li>
+                    Built the new Product Description Page (PDP) for Simple
+                    Carpets using a micro frontend architecture.
                   </li>
                 </ul>
               </li>

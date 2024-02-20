@@ -1,11 +1,11 @@
-import Slide from "../components/Slide.tsx";
-import ProjectsIcon from "../components/icons/ProjectsIcon.tsx";
-import TreeIcon from "../components/icons/TreeIcon.tsx";
-import ContactIcon from "../components/icons/ContactIcon.tsx";
-import HardwareIcon from "../components/icons/HardwareIcon.tsx";
-import SoftwareIcon from "../components/icons/SoftwareIcon.tsx";
-import GooglePlayIcon from "../components/icons/GooglePlayIcon.tsx";
-import AppStoreIcon from "../components/icons/AppStoreIcon.tsx";
+import Slide from "../src/components_old/Slide.tsx";
+import ProjectsIcon from "../src/components_old/icons/ProjectsIcon.tsx";
+import TreeIcon from "../src/components_old/icons/TreeIcon.tsx";
+import ContactIcon from "../src/components_old/icons/ContactIcon.tsx";
+import HardwareIcon from "../src/components_old/icons/HardwareIcon.tsx";
+import SoftwareIcon from "../src/components_old/icons/SoftwareIcon.tsx";
+import GooglePlayIcon from "../src/components_old/icons/GooglePlayIcon.tsx";
+import AppStoreIcon from "../src/components_old/icons/AppStoreIcon.tsx";
 import { asset, Head } from "$fresh/runtime.ts";
 
 export default function Home() {
