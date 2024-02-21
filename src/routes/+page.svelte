@@ -22,24 +22,21 @@
 	<div>
 		<h1 class="text-3xl font-bold mb-4">Hello!</h1>
 		<p>
-			I{"'"}m{' '}
+			I'm
 			<a class="underline" href="https://www.linkedin.com/in/pyrossh">
 				<strong>Peter John</strong>
-			</a>
-			, a fullstack developer from Bengaluru, India. I love writing code and I am lucky enough to do
-			this as my job.
+			</a>, a fullstack developer from Bengaluru, India. I love writing code and I am lucky enough
+			to do this as my job.
 		</p>
 		<p>
 			I currently work for Equal Experts. I have a strong passion for golang but I also work with
-			react and nodejs. I{"'"}ve mostly worked with startups and product based companies. I have
-			gained a lot of domain specific knowledge in healthcare and finance during these startup
-			years.
+			react and nodejs. I've mostly worked with startups and product based companies. I have gained
+			a lot of domain specific knowledge in healthcare and finance during these startup years.
 		</p>
 		<p>
 			I like to work on open source and hobby projects. Over the course of
-			{' '}
-			{new Date().getFullYear() - 2014}{' '}
-			years I{"'"}ve accumulated a lot of useful projects used by many people around the world.
+			{new Date().getFullYear() - 2014}
+			years I've accumulated a lot of useful projects used by many people around the world.
 		</p>
 		<div>
 			<div class="flex items-center mt-8 mb-4">
