@@ -3,15 +3,16 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	let { children } = $props();
+	let url = `https://pyros.sh${$page.url.pathname}`;
 </script>
 
 <svelte:head>
 	<meta name="author" content="pyrossh" />
 	<meta name="keywords" content="pyros.sh,pyrossh,astro,website" />
-	<link rel="canonical" href={$page.url.pathname} />
+	<link rel="canonical" href={url} />
 	<meta property="og:site_name" content="pyros.sh" />
 	<meta property="og:type" content="website" />
-	<meta property="og:url" content={$page.url.pathname} />
+	<meta property="og:url" content={url} />
 </svelte:head>
 <div
 	style="display: contents"

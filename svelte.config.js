@@ -4,6 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
     adapter: adapter({
+      strict: true,
       fallback: '404.html'
     })
   }
