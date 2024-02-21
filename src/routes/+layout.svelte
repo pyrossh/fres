@@ -13,6 +13,10 @@
 	<meta property="og:site_name" content="pyros.sh" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
+	<script
+		src="https://js.sentry-cdn.com/c5d07f4181a8450fa2cface73930c4f2.min.js"
+		crossorigin="anonymous"
+	></script>
 </svelte:head>
 <div
 	style="display: contents"
