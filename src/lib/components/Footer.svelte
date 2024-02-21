@@ -8,9 +8,9 @@
 			<SocialLinks />
 		</div>
 		<div class="flex">
-			<span class="text-base text-#f1fa8c hover:no-underline"> powered by </span>
-			<a class="mx-2 -mt-3" href="https://fresh.deno.dev">
-				<!-- <LemonDrop /> -->
+			<span class="text-base text-#8D8D93 hover:no-underline"> powered by </span>
+			<a class="mx-2 -mt-3" href="https://kit.svelte.dev" target="_blank" rel="noopener noreferrer">
+				<div class="i-logos:svelte-kit w-24 h-12"></div>
 			</a>
 		</div>
 	</div>

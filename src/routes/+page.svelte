@@ -10,17 +10,20 @@
 	import curve from '$lib/assets/logos/curve.png';
 </script>
 
-<div class="mx-auto">
+<svelte:head>
 	<title>pyros.sh</title>
 	<meta
 		name="description"
 		content="A fullstack developer from Bangalore who likes to create frameworks and programming languages."
 	/>
+</svelte:head>
+
+<div class="mx-auto">
 	<div>
 		<h1 class="text-3xl font-bold mb-4">Hello!</h1>
 		<p>
 			I{"'"}m{' '}
-			<a class="underline" href="https://www.linkedin.com/in/peter-john-in">
+			<a class="underline" href="https://www.linkedin.com/in/pyrossh">
 				<strong>Peter John</strong>
 			</a>
 			, a fullstack developer from Bengaluru, India. I love writing code and I am lucky enough to do
@@ -40,7 +43,7 @@
 		</p>
 		<div>
 			<div class="flex items-center mt-8 mb-4">
-				<div class="i-ic-outline-space-dashboard text-pink-800 w-8 h-8 mr-2" />
+				<div class="i-ic-outline-space-dashboard text-pink-800 mr-2" />
 				<h2>Projects</h2>
 			</div>
 			<div
@@ -82,102 +85,118 @@
 					</div>
 				</Slide>
 				<section>
-					<div class="flex items-center child-svg:mr-2 child-svg:text-green-800">
-						<!-- <HardwareIcon size="32" /> -->
+					<div class="flex items-center">
+						<div class="i-eos-icons:hardware-circuit text-green-800 mr-2" />
 						<h2>Hardware</h2>
 					</div>
-					<ul
-						class="grid gap-2 grid-cols-1 text-center mt-4 heir-a:text-blue-900 child:bg-gray-200 child:p-1"
-					>
+					<ul class="grid gap-2 grid-cols-1 text-center mt-4 children:(bg-gray-200 p-1)">
 						<li>M2 Macbook Air</li>
 						<li>Raspberry Pi 4B</li>
 						<li>Raspberry Pi Zero 2W</li>
 					</ul>
 				</section>
 				<section>
-					<div class="flex items-center child-svg:mr-2 child-svg:text-blue-800">
-						<!-- <SoftwareIcon size="32" /> -->
+					<div class="flex items-center">
+						<div class="i-eos-icons:software-outlined text-blue-800 mr-2" />
 						<h2>Software</h2>
 					</div>
-					<ul
-						class="grid gap-2 grid-cols-3 text-center mt-4 heir-img:w-12 heir-a:text-base heir-a:text-blue-900 heir-a:flex heir-a:flex-col heir-a:items-center child:bg-gray-200 child:p-2 child:pb-4"
-					>
+					<ul class="grid gap-2 grid-cols-3 text-center mt-4 children:(bg-gray-200 p-2 pb-4)">
 						<li>
-							<a href="https://github.com/exelban/stats" target="_blank" rel="noopener noreferrer">
+							<a
+								class="soft-link"
+								href="https://github.com/exelban/stats"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								Stats
-								<img class="w-12 h-12" src={stats} alt="Stats" />
+								<img class="soft-icon" src={stats} alt="Stats" />
 							</a>
 						</li>
 						<li>
 							<a
+								class="soft-link"
 								href="https://github.com/brave/brave-browser"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Brave
-								<img class="w-12 h-12" src={brave} alt="Brave" />
+								<img class="soft-icon" src={brave} alt="Brave" />
 							</a>
 						</li>
 						<li>
 							<a
+								class="soft-link"
 								href="https://github.com/microsoft/vscode"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								VS Code
-								<img class="w-12 h-12" src={code} alt="VsCode" />
+								<img class="soft-icon" src={code} alt="VsCode" />
 							</a>
 						</li>
 						<li>
 							<a
+								class="soft-link"
 								href="https://github.com/helix-editor/helix"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Helix
-								<img class="w-12 h-12" src={helix} alt="Helix" />
+								<img class="soft-icon" src={helix} alt="Helix" />
 							</a>
 						</li>
 						<li>
 							<a
+								class="soft-link"
 								href="https://github.com/fish-shell/fish-shell"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								Fish
-								<img class="w-12 h-12" src={fish} alt="Fish" />
+								<img class="soft-icon" src={fish} alt="Fish" />
 							</a>
 						</li>
 						<li>
 							<a
+								class="soft-link"
 								href="https://github.com/gnachman/iTerm2"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
 								iTerm2
-								<img class="w-12 h-12" src={iterm} alt="iterm2" />
+								<img class="soft-icon" src={iterm} alt="iterm2" />
 							</a>
 						</li>
 						<li>
-							<a href="https://colorslurp.com" target="_blank" rel="noopener noreferrer">
+							<a
+								class="soft-link"
+								href="https://colorslurp.com"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								Slurp
-								<img class="w-12" src={slurp} alt="slurp" />
+								<img class="soft-icon" src={slurp} alt="slurp" />
 							</a>
 						</li>
 						<li>
-							<a href="https://www.vectornator.io" target="_blank" rel="noopener noreferrer">
+							<a
+								class="soft-link"
+								href="https://www.vectornator.io"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
 								Curve
-								<img class="w-12" src={curve} alt="curve" />
+								<img class="soft-icon" src={curve} alt="curve" />
 							</a>
 						</li>
 					</ul>
 				</section>
 				<section>
-					<div class="flex items-center child-svg:mr-2 child-svg:text-amber-900">
-						<!-- <TreeIcon size="36" /> -->
+					<div class="flex items-center">
+						<div class="i-mdi:file-tree-outline text-amber-900 mr-2" />
 						<h2>Interests</h2>
 					</div>
-					<ul class="grid gap-2 grid-cols-3 text-center mt-4 child:bg-slate-100 child:p-1">
+					<ul class="grid gap-2 grid-cols-3 text-center mt-4 children:(bg-slate-100 p-1)">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>Tailwind</li>
@@ -193,25 +212,25 @@
 					</ul>
 				</section>
 				<section>
-					<div class="flex items-center child-svg:mr-2 child-svg:text-cyan-950">
-						<!-- <ContactIcon size="36" /> -->
+					<div class="flex items-center">
+						<div class="i-mdi-contact-outline text-cyan-950 mr-2" />
 						<h2>Contact</h2>
 					</div>
 					<ul
-						class="grid gap-2 grid-cols-1 text-lg text-left mt-4 heir-strong:mr-2 child:bg-slate-100 child:p-2 child:flex child:flex-col child:sm:flex-row"
+						class="grid gap-2 grid-cols-1 text-lg text-left mt-4 children:(bg-slate-100 p-2 flex flex-col sm:flex-row)"
 					>
 						<li>
-							<strong>Email:</strong>
+							<strong class="mr-2">Email:</strong>
 							<span>pyros2097@gmail.com</span>
 						</li>
 						<li>
-							<strong>Github:</strong>
+							<strong class="mr-2">Github:</strong>
 							<a class="text-blue-900" href="https://github.com/pyrossh">
 								https://github.com/pyrossh
 							</a>
 						</li>
 						<li>
-							<strong>LinkedIn:</strong>
+							<strong class="mr-2">LinkedIn:</strong>
 							<a class="text-blue-900" href="https://www.linkedin.com/in/peter-john-in">
 								https://www.linkedin.com/in/pyrossh
 							</a>
@@ -226,5 +245,13 @@
 <style>
 	h2 {
 		--at-apply: text-xl font-semibold middle;
+	}
+
+	.soft-link {
+		--at-apply: text-base text-blue-900 flex flex-col items-center;
+	}
+
+	.soft-icon {
+		--at-apply: w-12 h-12;
 	}
 </style>

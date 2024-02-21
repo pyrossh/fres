@@ -1,14 +1,19 @@
 <script>
+	import { page } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	let { children } = $props();
+
+	export const prerender = true;
 </script>
 
 <svelte:head>
+	<meta name="author" content="pyrossh" />
+	<meta name="keywords" content="pyros.sh,pyrossh,astro,website" />
+	<link rel="canonical" href={$page.url.pathname} />
 	<meta property="og:site_name" content="pyros.sh" />
 	<meta property="og:type" content="website" />
-	<!-- <link rel="canonical" href={url.toString()} />
-  <meta property="og:url" content={url.toString()} /> -->
+	<meta property="og:url" content={$page.url.pathname} />
 </svelte:head>
 <div
 	style="display: contents"

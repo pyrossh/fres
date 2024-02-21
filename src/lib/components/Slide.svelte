@@ -11,7 +11,7 @@
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<div class="i-mdi-github w-8 h-8 mr-2"  />
+				<div class="i-mdi-github mr-2" />
 				<p>{title}</p>
 			</a>
 			{@render children()}
