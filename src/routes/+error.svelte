@@ -1,4 +1,5 @@
 <script>
+	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 </script>
 
@@ -24,6 +25,6 @@
 				Something went wrong. Please try again later.
 			{/if}
 		</p>
-		<a href="/" class="underline mt-4"> Go back home </a>
+		<a href="{base}/" class="underline mt-4"> Go back home </a>
 	</div>
 </div>
