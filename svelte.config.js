@@ -4,11 +4,7 @@ import adapter from '@sveltejs/adapter-static';
 const config = {
   kit: {
     adapter: adapter({
-      pages: 'build',
-      assets: 'build',
-      fallback: 'index.html',
-      precompress: true,
-      strict: true
+      fallback: '404.html'
     }),
     paths: {
       base: process.argv.includes('dev') ? '' : process.env.BASE_PATH
