@@ -51,7 +51,18 @@
 					</p>
 				</Slide>
 				<Slide title="pyros.sh" link="https://github.com/pyrossh/pyros.sh">
-					<p>木 Personal website of pyrossh</p>
+					<p>
+						木 Personal website of pyrossh. Built with
+						<span class="children:underline">
+							<a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
+								>sveltekit</a
+							>,
+							<a href="https://unocss.dev/" target="_blank" rel="noopener noreferrer">unocss</a>,
+							<a href="https://iconify.design/" target="_blank" rel="noopener noreferrer">iconify</a
+							>,
+							<a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">vite</a>.
+						</span>
+					</p>
 				</Slide>
 				<Slide title="pacos.sh" link="https://github.com/pyrossh/pacos.sh">
 					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
