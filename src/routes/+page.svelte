@@ -40,12 +40,10 @@
 		</p>
 		<div>
 			<div class="flex items-center mt-8 mb-4">
-				<div class="i-ic-outline-space-dashboard text-pink-800 mr-2" />
+				<div class="i-ant-design:project-outlined text-pink-800 mr-2" />
 				<h2>Projects</h2>
 			</div>
-			<div
-				class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8 child-section:flex child-section:flex-col child-section:mt-4 child-section:mx-1"
-			>
+			<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
 				<Slide title="rust-embed" link="https://github.com/pyrossh/rust-embed">
 					<p>
 						A rust proc-macro which loads files into the rust binary at compile time during release
@@ -242,6 +240,10 @@
 <style>
 	h2 {
 		--at-apply: text-xl font-semibold middle;
+	}
+
+	section {
+		--at-apply: flex flex-col mt-4 mx-1;
 	}
 
 	.soft-link {
