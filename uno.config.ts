@@ -6,7 +6,6 @@ export default defineConfig({
   presets: [
     presetUno(),
     presetIcons({
-      autoInstall: true,
       extraProperties: {
         width: '2.25rem',
         height: '2.25rem'
