@@ -1,5 +1,6 @@
 <script>
-	let { title, link, children } = $props();
+	// let { title, link, children } = $props();
+	export let title, link;
 </script>
 
 <article class="overflow-hidden rounded bg-[#f0ede2]">
@@ -14,7 +15,8 @@
 				<div class="i-mdi-github mr-2" />
 				<p>{title}</p>
 			</a>
-			{@render children()}
+			<!-- {@render children()} -->
+			<slot />
 		</div>
 	</div>
 </article>

@@ -2,7 +2,7 @@
 	<title>pyros.sh | Posts</title>
 	<meta name="description" content="Peter John's Posts" />
 </svelte:head>
-<div class="h-screen">
+<div>
 	<div class="px-4 py-40 mx-auto">TBD</div>
 </div>
 
