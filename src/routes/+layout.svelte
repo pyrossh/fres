@@ -13,15 +13,12 @@
 	<meta property="og:site_name" content="pyros.sh" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-SMJPBQG3VE"></script>
-	<script>
-		window.dataLayer = window.dataLayer || [];
-		function gtag() {
-			dataLayer.push(arguments);
-		}
-		gtag('js', new Date());
-		gtag('config', 'G-SMJPBQG3VE');
-	</script>
+	<script
+		defer
+		src="https://api.pirsch.io/pirsch.js"
+		id="pirschjs"
+		data-code="fynEKPntFh9oUyUcIO76Tmcxzjkmwfjg"
+	></script>
 	<script
 		src="https://js.sentry-cdn.com/c5d07f4181a8450fa2cface73930c4f2.min.js"
 		crossorigin="anonymous"
