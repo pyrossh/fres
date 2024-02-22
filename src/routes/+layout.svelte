@@ -19,10 +19,6 @@
 		id="pirschjs"
 		data-code="fynEKPntFh9oUyUcIO76Tmcxzjkmwfjg"
 	></script>
-	<script
-		src="https://js.sentry-cdn.com/c5d07f4181a8450fa2cface73930c4f2.min.js"
-		crossorigin="anonymous"
-	></script>
 </svelte:head>
 <div
 	style="display: contents"
