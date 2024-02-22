@@ -12,7 +12,6 @@
 	onMount(() => {
 		page.subscribe(($page) => {
 			isPosts = $page.url.pathname.includes('posts');
-			console.log(isPosts);
 		});
 	});
 </script>

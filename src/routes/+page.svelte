@@ -23,7 +23,12 @@
 		<h1 class="text-3xl font-bold mb-4">Hello!</h1>
 		<p>
 			I'm
-			<a class="underline" href="https://www.linkedin.com/in/pyrossh">
+			<a
+				class="underline"
+				href="https://www.linkedin.com/in/pyrossh"
+				target="_blank"
+				rel="noopener noreferrer"
+			>
 				<strong>Peter John</strong>
 			</a>, a fullstack developer from Bengaluru, India. I love writing code and I am lucky enough
 			to do this as my job.
