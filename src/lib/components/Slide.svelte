@@ -13,7 +13,7 @@
 				rel="noopener noreferrer"
 			>
 				<div class="i-mdi-github mr-2" />
-				<p>{title}</p>
+				<h2>{title}</h2>
 			</a>
 			<!-- {@render children()} -->
 			<slot />
