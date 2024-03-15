@@ -13,9 +13,13 @@
 
 <article class="post-page">
 	<hgroup class="flex flex-1 flex-col font-serif">
-		<h1 class="font-bold text-4xl">{data.meta.title}</h1>
+		<h1 class="font-bold text-2xl">
+			{data.meta.title}
+		</h1>
+		<h2 class="mt-1 font-normal text-base text-slate-700">{data.meta.description}</h2>
 		<p class="text-md">
-			<span class="font-semibold">Published on: </span>{formatDateLong(data.meta.date)}
+			<span class="font-semibold">Published on: </span>
+			{formatDateLong(data.meta.date)}
 		</p>
 	</hgroup>
 	<div class="mb-6">
