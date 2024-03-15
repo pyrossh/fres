@@ -255,7 +255,7 @@
 
 <style>
 	h2 {
-		--at-apply: text-xl font-semibold middle;
+		--at-apply: text-xl font-semibold;
 	}
 
 	section {

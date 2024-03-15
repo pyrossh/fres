@@ -2,18 +2,10 @@
 	import { getStores } from '$app/stores';
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
-	import { onMount } from 'svelte';
 	// let { children } = $props();
 
 	const { page } = getStores();
 	let url = `https://pyros.sh${$page.url.pathname}`;
-
-	let isPosts = false;
-	onMount(() => {
-		page.subscribe(($page) => {
-			isPosts = $page.url.pathname.includes('posts');
-		});
-	});
 </script>
 
 <svelte:head>
@@ -30,10 +22,7 @@
 		data-code="fynEKPntFh9oUyUcIO76Tmcxzjkmwfjg"
 	></script>
 </svelte:head>
-<div
-	class:h-screen={isPosts}
-	class="leading-8 flex flex-1 flex-col font-normal text-lg sm:leading-7 m-0"
->
+<div class="leading-8 flex flex-1 flex-col font-normal text-lg sm:leading-7 m-0">
 	<Header />
 	<main class="w-full h-full block bg-white">
 		<div class="flex w-full flex-1 flex-row justify-center">

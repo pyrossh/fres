@@ -1,13 +1,13 @@
 ---
-layout: ../../../layouts/post.astro
 title: Eyecandy golang error reporting
 description: Better error messages logging in golang
-image: ../../../assets/images/terminal1.png
-date: September 17, 2016
+image: /images/terminal1.png
+date: 2016-09-17
 tags:
   - golang
   - error
   - formatting
+published: true
 ---
 
 We at playlyfe wanted to get an email report as soon as an error occurred on our production servers. Since golang does not have
@@ -72,7 +72,7 @@ https://github.com/maruel/panicparse/issues/8
 with the developer and +1’s we got a proper api which I could use.
 And now I haz got a prettier stack traces like this,
 
-![Terminal 1](../../../assets/images/terminal1.png)
+![Terminal 1](/images/terminal1.png)
 
 So great I got ANSI coloring setup and the errors look great in our console but what about our
 mails. Of course this wasn’t going to work since emails primarily render text and HTML only, and
@@ -88,4 +88,4 @@ https://github.com/aymerick/douceur
 
 Finally after messing around with so many libraries I got around to getting it to work and this is how it looks in my email,
 
-![Email 1](../../../assets/images/email1.png)
+![Email 1](/images/email1.png)
