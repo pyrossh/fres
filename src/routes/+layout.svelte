@@ -22,7 +22,7 @@
 		data-code="fynEKPntFh9oUyUcIO76Tmcxzjkmwfjg"
 	></script>
 </svelte:head>
-<div class="leading-8 flex flex-1 flex-col font-normal text-lg sm:leading-7 m-0">
+<div class="leading-8 flex flex-1 flex-col text-base sm:leading-7 m-0">
 	<Header />
 	<main class="w-full h-full block bg-white">
 		<div class="flex w-full flex-1 flex-row justify-center">

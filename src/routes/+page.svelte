@@ -22,7 +22,7 @@
 	<div>
 		<h1 class="text-3xl font-bold mb-4">Hello!</h1>
 		<p>
-			I'm
+			I'm a full-stack engineer from Bengaluru, India named
 			<a
 				class="underline"
 				href="https://www.linkedin.com/in/pyrossh"
@@ -30,18 +30,18 @@
 				rel="noopener noreferrer"
 			>
 				<strong>Peter John</strong>
-			</a>, a fullstack developer from Bengaluru, India. I love writing code and I am lucky enough
-			to do this as my job.
+			</a>. I have the good fortune to write code for a living.
 		</p>
 		<p>
-			I currently work for Equal Experts. I have a strong passion for golang but I also work with
-			react and nodejs. I've mostly worked with startups and product based companies. I have gained
-			a lot of domain specific knowledge in healthcare and finance during these startup years.
+			At the moment, Equal Experts employs me. While I've experimented with functional programming
+			languages like Haskell, Idris, and Koka, I prefer to use statically typed imperative
+			programming languages like Rust, Go, and Java. I've generally worked for new businesses and
+			corporations that focus on products. Throughout these early years of launch, I have learned a
+			great deal about the healthcare and financial industries.
 		</p>
 		<p>
-			I like to work on open source and hobby projects. Over the course of
-			{new Date().getFullYear() - 2014}
-			years I've accumulated a lot of useful projects used by many people around the world.
+			I enjoy working on open-source projects, and during the last decade, I've created a number of
+			valuable projects that are extensively utilized by people worldwide.
 		</p>
 		<div>
 			<div class="flex items-center mt-8 mb-4">
@@ -228,7 +228,7 @@
 						<h2>Contact</h2>
 					</div>
 					<ul
-						class="grid gap-2 grid-cols-1 text-lg text-left mt-4 children:(bg-slate-100 p-2 flex flex-col sm:flex-row)"
+						class=" grid gap-2 grid-cols-1 text-left mt-4 children:(bg-slate-100 p-2 flex flex-col items-baseline sm:flex-row)"
 					>
 						<li>
 							<strong class="mr-2">Email:</strong>
