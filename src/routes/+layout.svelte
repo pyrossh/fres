@@ -5,14 +5,14 @@
 	// let { children } = $props();
 
 	const { page } = getStores();
-	let url = `https://pyros.sh${$page.url.pathname}`;
+	let url = `https://pyrossh.dev${$page.url.pathname}`;
 </script>
 
 <svelte:head>
 	<meta name="author" content="pyrossh" />
-	<meta name="keywords" content="pyros.sh,pyrossh,astro,website" />
+	<meta name="keywords" content="pyrossh.dev,pyrossh,svelte,website" />
 	<link rel="canonical" href={url} />
-	<meta property="og:site_name" content="pyros.sh" />
+	<meta property="og:site_name" content="pyrossh.dev" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
 	<script

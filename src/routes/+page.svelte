@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<title>pyros.sh</title>
+	<title>pyrossh</title>
 	<meta
 		name="description"
 		content="A fullstack developer from Bangalore who likes to create frameworks and programming languages."
@@ -55,7 +55,7 @@
 						and loads the file from the fs during dev
 					</p>
 				</Slide>
-				<Slide title="pyros.sh" link="https://github.com/pyrossh/pyros.sh">
+				<Slide title="pyrossh" link="https://github.com/pyrossh/pyrossh.dev">
 					<p>
 						木 Personal website of pyrossh. Built with
 						<span class="children:underline">
