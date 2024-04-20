@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>pyros.sh | CV</title>
+	<title>pyrossh | cv</title>
 	<meta name="description" content="Peter John's CV" />
 </svelte:head>
 

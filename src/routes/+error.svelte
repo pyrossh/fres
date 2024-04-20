@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>pyros.sh | {$page.error?.message}</title>
+	<title>pyrossh | {$page.error?.message}</title>
 	<meta name="description" content="${$page.error?.message}" />
 </svelte:head>
 

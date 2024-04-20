@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>pyros.sh | {data.meta.title}</title>
+	<title>pyrossh | {data.meta.title}</title>
 	<meta name="description" content={data.meta.description} />
 	<meta name="keywords" content={data.meta.tags} />
 	<meta property="og:type" content="article" />

@@ -4,7 +4,7 @@
 </script>
 
 <svelte:head>
-	<title>pyros.sh | Posts</title>
+	<title>pyrossh | posts</title>
 	<meta name="description" content="Peter John's Posts" />
 </svelte:head>
 <div>
