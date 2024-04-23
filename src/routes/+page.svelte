@@ -101,9 +101,11 @@
 						<h2>Hardware</h2>
 					</div>
 					<ul class="grid gap-2 grid-cols-1 text-center mt-4 children:(bg-gray-200 p-1)">
-						<li>M2 Macbook Air</li>
-						<li>Raspberry Pi 4B</li>
-						<li>Raspberry Pi Zero 2W</li>
+						<li>M2 Macbook Air Laptop</li>
+						<li>LG 27 inch Ultrafine Ergo 4K Monitor</li>
+						<li>Logitech Mx Keys Mini Keyboard</li>
+						<li>Logitech MX Anywhere 3S Mouse</li>
+						<li>Anker PowerConf C300 Webcam</li>
 					</ul>
 				</section>
 				<section>
