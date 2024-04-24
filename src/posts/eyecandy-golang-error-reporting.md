@@ -12,10 +12,9 @@ published: true
 
 We at playlyfe wanted to get an email report as soon as an error occurred on our production servers. Since golang does not have
 stack traces with its inbuilt error mechanism we had to find a quick and simple solution which wouldn’t require too much refactoring
-of our existing codebase. So this is how we went about accomplishing this task. First we decided to wrap our errors so that we can
-get the runtime stack whenever an error occurs.
+of our existing codebase. So this is how we went about accomplishing this task. First we decided to wrap our errors so that we can get the runtime stack whenever an error occurs.
 
-We first started using this, https://github.com/go-errors/errors
+We first started using this library https://github.com/go-errors/errors
 but soon found out that it wasn’t exactly suited for our use case. So we created this minimalistic and easy approach to wrap all our
 existing errors. First we decided to wrap our errors so that we can get the runtime stack whenever an error occurs.
 

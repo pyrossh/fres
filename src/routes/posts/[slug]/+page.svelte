@@ -12,25 +12,25 @@
 </svelte:head>
 
 <article class="post-page">
-	<hgroup class="flex flex-1 flex-col font-serif">
+	<hgroup class="flex flex-1 flex-col mb-6">
 		<h1 class="font-bold text-2xl">
 			{data.meta.title}
 		</h1>
 		<h2 class="mt-1 font-normal text-base text-slate-700">{data.meta.description}</h2>
-		<p class="text-md">
-			<span class="font-semibold">Published on: </span>
+		<div class="mt-4">
+			<span class="text-slate-700 font-semibold mr-1">Published on: </span>
 			{formatDateLong(data.meta.date)}
-		</p>
+		</div>
+		<div class="flex mt-1">
+			<span class="text-slate-700 font-semibold mr-1">Tags:</span>
+			{#each data.meta.tags as tag}
+				<span
+					class="inline-flex items-center rounded-sm bg-slate-100 px-1 text-base font-medium text-gray-700 ring-1 ring-inset ring-gray-500/10 mr-3"
+					>{tag}</span
+				>
+			{/each}
+		</div>
 	</hgroup>
-	<div class="mb-6">
-		<span class="font-semibold">Tags:</span>
-		{#each data.meta.tags as tag}
-			<span
-				class="inline-flex items-center rounded-md bg-gray-100 px-2 py-1 text-base font-medium text-gray-700 ring-1 ring-inset ring-gray-500/10 mr-3"
-				>{tag}</span
-			>
-		{/each}
-	</div>
 	<div class="prose">
 		<svelte:component this={data.content} />
 	</div>
@@ -49,6 +49,11 @@
 				Courier New,
 				monospace;
 			font-size: 0.9em;
+		}
+
+		& a {
+			text-decoration: underline;
+			--at-apply: text-blue-900;
 		}
 
 		& p {
@@ -115,15 +120,5 @@
 				}
 			}
 		}
-	}
-
-	.tag {
-		background-color: var(--black-light);
-		color: white;
-		display: inline-block;
-		padding-left: 8px;
-		padding-right: 8px;
-		text-align: center;
-		margin-right: 1rem;
 	}
 </style>
