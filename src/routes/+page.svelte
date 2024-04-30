@@ -85,7 +85,7 @@
 					</p>
 					<div class="flex mt-4">
 						<a
-							class="mr-2 w-36 ml-(-2)"
+							class="mr-2 w-36 h-6 ml-(-2)"
 							href="https://play.google.com/store/apps/details?id=sh.pyros.only_bible_app"
 							rel="noopener noreferrer"
 							target="blank"
