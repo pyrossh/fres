@@ -73,25 +73,38 @@
 					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
-				<Slide title="onlybible.app" link="https://github.com/pyrossh/onlybible.app">
+				<Slide title="Only Bible App" link="https://github.com/pyrossh/onlybible.app">
+					<img
+						slot="icon"
+						class="mr-2 w-9 rounded-3"
+						src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/59/26/b8/5926b8c7-b993-c4d4-8945-1fe3de765e27/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg"
+						alt="Only Bible App"
+					/>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
 					</p>
 					<div class="flex mt-4">
 						<a
-							class="mr-4"
+							class="mr-2 w-36 ml-(-2)"
 							href="https://play.google.com/store/apps/details?id=sh.pyros.only_bible_app"
 							rel="noopener noreferrer"
 							target="blank"
 						>
-							<!-- <GooglePlayIcon /> -->
+							<img
+								alt="Get it on Google Play"
+								src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
+							/>
 						</a>
 						<a
-							href="https://apps.apple.com/us/app/only-bible-app/id6467606465"
+							class="mt-2"
+							href="https://apps.apple.com/us/app/only-bible-app/id6467606465?itsct=apps_box_badge&amp;itscg=30200"
 							rel="noopener noreferrer"
 							target="blank"
 						>
-							<!-- <AppStoreIcon /> -->
+							<img
+								src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1695600000"
+								alt="Download on the App Store"
+							/>
 						</a>
 					</div>
 				</Slide>

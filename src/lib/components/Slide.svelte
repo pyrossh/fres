@@ -12,7 +12,9 @@
 				target="_blank"
 				rel="noopener noreferrer"
 			>
-				<div class="i-mdi-github mr-2" />
+				<slot name="icon">
+					<div class="i-mdi-github mr-2" />
+				</slot>
 				<h2>{title}</h2>
 			</a>
 			<!-- {@render children()} -->
