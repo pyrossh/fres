@@ -101,7 +101,7 @@
 						<h2>Hardware</h2>
 					</div>
 					<ul class="grid gap-2 grid-cols-1 text-center mt-4 children:(bg-gray-200 p-1)">
-						<li>Macbook Air M2 Laptop</li>
+						<li>Macbook M3 Pro Laptop</li>
 						<li>LG 27 inch Ultrafine Ergo 4K Monitor</li>
 						<li>Logitech Mx Keys Mini Keyboard</li>
 						<li>Logitech MX Anywhere 3S Mouse</li>
