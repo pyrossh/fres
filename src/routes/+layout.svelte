@@ -15,12 +15,6 @@
 	<meta property="og:site_name" content="pyrossh.dev" />
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
-	<script
-		defer
-		src="https://api.pirsch.io/pirsch.js"
-		id="pirschjs"
-		data-code="fynEKPntFh9oUyUcIO76Tmcxzjkmwfjg"
-	></script>
 </svelte:head>
 <div class="leading-8 flex flex-1 flex-col text-base sm:leading-7 m-0">
 	<Header />
