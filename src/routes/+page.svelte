@@ -55,7 +55,8 @@
 						and loads the file from the fs during dev
 					</p>
 				</Slide>
-				<Slide title="pyrossh" link="https://github.com/pyrossh/pyrossh.dev">
+				<Slide title="pyrossh.dev" link="https://github.com/pyrossh/pyrossh.dev">
+					<img slot="icon" class="mr-2 w-9 rounded-2" src="/favicon.png" alt="Only Bible App" />
 					<p>
 						木 Personal website of pyrossh. Built with
 						<span class="children:underline">
@@ -73,10 +74,10 @@
 					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
-				<Slide title="Only Bible App" link="https://github.com/pyrossh/onlybible.app">
+				<Slide title="onlybible.app" link="https://onlybible.app">
 					<img
 						slot="icon"
-						class="mr-2 w-9 rounded-3"
+						class="mr-2 w-9 rounded-2"
 						src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/59/26/b8/5926b8c7-b993-c4d4-8945-1fe3de765e27/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg"
 						alt="Only Bible App"
 					/>
@@ -85,7 +86,7 @@
 					</p>
 					<div class="flex mt-4">
 						<a
-							class="mr-2 w-36 h-6 ml-(-2)"
+							class="mr-2 w-36 h-6 -ml-2"
 							href="https://play.google.com/store/apps/details?id=sh.pyros.only_bible_app"
 							rel="noopener noreferrer"
 							target="blank"
@@ -114,7 +115,7 @@
 						<h2>Hardware</h2>
 					</div>
 					<ul class="grid gap-2 grid-cols-1 text-center mt-4 children:(bg-gray-200 p-1)">
-						<li>Macbook M3 Pro Laptop</li>
+						<li>Macbook Pro M3 Laptop</li>
 						<li>LG 27 inch Ultrafine Ergo 4K Monitor</li>
 						<li>Logitech Mx Keys Mini Keyboard</li>
 						<li>Logitech MX Anywhere 3S Mouse</li>
