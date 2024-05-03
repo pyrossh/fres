@@ -13,8 +13,7 @@
     "lint": "prettier --check . && eslint .",
     "format": "prettier --write .",
     "test:integration": "playwright test",
-    "test:unit": "vitest",
-    "postbuild": "npx svelte-sitemap --domain https://pyrossh.dev --ignore '**404**'"
+    "test:unit": "vitest"
   },
   "dependencies": {
     "@sentry/sveltekit": "^7.102.0",
@@ -37,9 +36,9 @@
     "mdsvex": "^0.11.0",
     "prettier": "^3.1.1",
     "prettier-plugin-svelte": "^3.1.2",
+    "super-sitemap": "^0.14.14",
     "svelte": "4.2.11",
     "svelte-check": "^3.6.0",
-    "svelte-sitemap": "^2.6.0",
     "typescript": "^5.0.0",
     "unocss": "^0.58.5",
     "vite": "^5.0.3",
