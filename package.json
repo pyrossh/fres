@@ -14,7 +14,7 @@
     "format": "prettier --write .",
     "test:integration": "playwright test",
     "test:unit": "vitest",
-    "postbuild": "npx svelte-sitemap --domain https://pyrossh.dev"
+    "postbuild": "npx svelte-sitemap --domain https://pyrossh.dev --ignore '**404**'"
   },
   "dependencies": {
     "@sentry/sveltekit": "^7.102.0",
