@@ -1,13 +1,17 @@
 <script>
 	import Slide from '$lib/components/Slide.svelte';
-	import stats from '$lib/assets/logos/stats.png';
-	import brave from '$lib/assets/logos/brave.png';
-	import code from '$lib/assets/logos/code.png';
-	import helix from '$lib/assets/logos/helix.png';
-	import fish from '$lib/assets/logos/fish.png';
-	import iterm from '$lib/assets/logos/iterm.png';
-	import slurp from '$lib/assets/logos/slurp.png';
-	import curve from '$lib/assets/logos/curve.png';
+	import PlayStoreIcon from '$lib/assets/icons/playstore.svg?component';
+	import AppStoreIcon from '$lib/assets/icons/appstore.svg?component';
+	import onlyBiblePng from '$lib/assets/logos/onlybible.png?enhanced';
+	import pyrosshPng from '$lib/assets/logos/pyrossh.png?enhanced';
+	import stats from '$lib/assets/logos/stats.png?enhanced';
+	import brave from '$lib/assets/logos/brave.png?enhanced';
+	import code from '$lib/assets/logos/code.png?enhanced';
+	import helix from '$lib/assets/logos/helix.png?enhanced';
+	import fish from '$lib/assets/logos/fish.png?enhanced';
+	import iterm from '$lib/assets/logos/iterm.png?enhanced';
+	import slurp from '$lib/assets/logos/slurp.png?enhanced';
+	import curve from '$lib/assets/logos/curve.png?enhanced';
 </script>
 
 <svelte:head>
@@ -56,7 +60,9 @@
 					</p>
 				</Slide>
 				<Slide title="pyrossh.dev" link="https://github.com/pyrossh/pyrossh.dev">
-					<img slot="icon" class="mr-2 w-9 rounded-2" src="/favicon.png" alt="Only Bible App" />
+					<div slot="icon">
+						<enhanced:img class="mr-2 w-9 rounded-2" src={pyrosshPng} alt="pyrossh website" />
+					</div>
 					<p>
 						木 Personal website of pyrossh. Built with
 						<span class="children:underline">
@@ -75,37 +81,27 @@
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
 				<Slide title="onlybible.app" link="https://onlybible.app">
-					<img
-						slot="icon"
-						class="mr-2 w-9 rounded-2"
-						src="https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/59/26/b8/5926b8c7-b993-c4d4-8945-1fe3de765e27/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/540x540bb.jpg"
-						alt="Only Bible App"
-					/>
+					<div slot="icon">
+						<enhanced:img class="mr-2 w-9 rounded-2" src={onlyBiblePng} alt="Only Bible App" />
+					</div>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
 					</p>
 					<div class="flex mt-4">
 						<a
-							class="mr-2 w-36 h-6 -ml-2"
+							class="mr-2"
 							href="https://play.google.com/store/apps/details?id=sh.pyros.only_bible_app"
 							rel="noopener noreferrer"
 							target="blank"
 						>
-							<img
-								alt="Get it on Google Play"
-								src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-							/>
+							<PlayStoreIcon class="w-32" aria-label="Get it on Google Play" />
 						</a>
 						<a
-							class="mt-2"
 							href="https://apps.apple.com/us/app/only-bible-app/id6467606465?itsct=apps_box_badge&amp;itscg=30200"
 							rel="noopener noreferrer"
 							target="blank"
 						>
-							<img
-								src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1695600000"
-								alt="Download on the App Store"
-							/>
+							<AppStoreIcon class="w-32" aria-label="Download on the App Store" />
 						</a>
 					</div>
 				</Slide>
@@ -136,7 +132,7 @@
 								rel="noopener noreferrer"
 							>
 								Stats
-								<img class="soft-icon" src={stats} alt="Stats" />
+								<enhanced:img class="soft-icon" src={stats} alt="Stats" />
 							</a>
 						</li>
 						<li>
@@ -147,7 +143,7 @@
 								rel="noopener noreferrer"
 							>
 								Brave
-								<img class="soft-icon" src={brave} alt="Brave" />
+								<enhanced:img class="soft-icon" src={brave} alt="Brave" />
 							</a>
 						</li>
 						<li>
@@ -158,7 +154,7 @@
 								rel="noopener noreferrer"
 							>
 								VS Code
-								<img class="soft-icon" src={code} alt="VsCode" />
+								<enhanced:img class="soft-icon" src={code} alt="VsCode" />
 							</a>
 						</li>
 						<li>
@@ -169,7 +165,7 @@
 								rel="noopener noreferrer"
 							>
 								Helix
-								<img class="soft-icon" src={helix} alt="Helix" />
+								<enhanced:img class="soft-icon" src={helix} alt="Helix" />
 							</a>
 						</li>
 						<li>
@@ -180,7 +176,7 @@
 								rel="noopener noreferrer"
 							>
 								Fish
-								<img class="soft-icon" src={fish} alt="Fish" />
+								<enhanced:img class="soft-icon" src={fish} alt="Fish" />
 							</a>
 						</li>
 						<li>
@@ -191,7 +187,7 @@
 								rel="noopener noreferrer"
 							>
 								iTerm2
-								<img class="soft-icon" src={iterm} alt="iterm2" />
+								<enhanced:img class="soft-icon" src={iterm} alt="iterm2" />
 							</a>
 						</li>
 						<li>
@@ -202,7 +198,7 @@
 								rel="noopener noreferrer"
 							>
 								Slurp
-								<img class="soft-icon" src={slurp} alt="slurp" />
+								<enhanced:img class="soft-icon" src={slurp} alt="slurp" />
 							</a>
 						</li>
 						<li>
@@ -213,7 +209,7 @@
 								rel="noopener noreferrer"
 							>
 								Curve
-								<img class="soft-icon" src={curve} alt="curve" />
+								<enhanced:img class="soft-icon" src={curve} alt="curve" />
 							</a>
 						</li>
 					</ul>

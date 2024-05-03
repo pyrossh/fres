@@ -16,7 +16,6 @@
     "test:unit": "vitest"
   },
   "dependencies": {
-    "@sentry/sveltekit": "^7.102.0",
     "@unocss/reset": "^0.58.5",
     "remark-github": "^12.0.0",
     "shiki": "^1.1.7"
@@ -24,7 +23,9 @@
   "devDependencies": {
     "@iconify/json": "^2.2.185",
     "@playwright/test": "^1.28.1",
+    "@poppanator/sveltekit-svg": "^4.2.1",
     "@sveltejs/adapter-static": "^3.0.1",
+    "@sveltejs/enhanced-img": "^0.2.0",
     "@sveltejs/kit": "2.5.1",
     "@types/eslint": "8.56.0",
     "@unocss/svelte-scoped": "^0.58.5",
