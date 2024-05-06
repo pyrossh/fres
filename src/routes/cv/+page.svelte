@@ -16,7 +16,7 @@
 			<ul>
 				<li>
 					<b>John Lewis</b>
-					<ul class="children:list-disc">
+					<ul class="*:list-disc">
 						<li>Built a social quiz game to improve engagement across the website</li>
 						<li>
 							Implemented new functionality in customer self serve functions like returns,
@@ -38,7 +38,7 @@
 				</li>
 				<li>
 					<b>iOWNA</b>
-					<ul class="children:list-disc">
+					<ul class="*:list-disc">
 						<li>Built a content editor for curators to create content on our platform</li>
 						<li>
 							Built the iOWNA crossplatform app in react-native that works in android, ios, and web
@@ -55,7 +55,7 @@
 				</li>
 				<li>
 					<b>Zeta</b>
-					<ul class="children:list-disc">
+					<ul class="*:list-disc">
 						<li>
 							Added multiple download formats (pdf,html,xlsx) for reports in the Reporting Center
 						</li>
@@ -72,7 +72,7 @@
 				</li>
 				<li>
 					<b>Lifebox</b>
-					<ul class="children:list-disc">
+					<ul class="*:list-disc">
 						<li>Added search functionality to the hospital procedure codes</li>
 						<li>
 							Converted the Health Questionnaire from json to native go code making it easier to
@@ -96,7 +96,7 @@
 			Numberz integrates banking with your day-2-day business work-flows freeing up a lot of effort,
 			time and heart-burn, to help your business grow.
 		</h5>
-		<ul class="children:list-disc">
+		<ul class="*:list-disc">
 			<li>Implemented new features and fixed bugs on the numberz android app</li>
 			<li>Integrated numberz with Tally ERP</li>
 			<li>
@@ -130,7 +130,7 @@
 			Playlyfe is an online Gamification Platform which empowers anyone to design and implement a
 			gamified system.
 		</h5>
-		<ul class="children:list-disc">
+		<ul class="*:list-disc">
 			<li>Built the Playlyfe Hybrid Mobile app using Phonegap for Android and iOS</li>
 			<li>Built the leaderboard system using Mongodb, Redis and Couchbase as the datastore</li>
 			<li>Migration of data from v1 to v2 of the API</li>
@@ -159,7 +159,7 @@
 	</section>
 </div>
 
-<style>
+<style lang="postcss">
 	b {
 		font-weight: 600;
 	}

@@ -1,11 +1,15 @@
-<div class="flex hover:no-underline text-white child:mx-2 sm:child:ml-5">
+<script>
+	import Icon from '@iconify/svelte';
+</script>
+
+<div class="flex hover:no-underline text-white *:mx-2">
 	<a
 		href="https://linkedin.com/in/pyrossh"
 		title="My LinkedIn profile"
 		target="_blank"
 		rel="noopener noreferrer"
 	>
-		<div class="i-mdi-linkedin w-8 h-8 mr-2" />
+		<Icon class="" icon="mdi:linkedin" width="36" />
 	</a>
 	<a
 		href="https://github.com/pyrossh"
@@ -13,9 +17,9 @@
 		target="_blank"
 		rel="noopener noreferrer"
 	>
-		<div class="i-mdi-github w-8 h-8 mr-2" />
+		<Icon icon="mdi:github" width="36" />
 	</a>
 	<a href="mailto:pyros2097@gmail.com" title="My email" target="_blank" rel="noopener noreferrer">
-		<div class="i-mdi-email-outline w-8 h-8 mr-2" />
+		<Icon icon="mdi:email-outline" width="36" />
 	</a>
 </div>

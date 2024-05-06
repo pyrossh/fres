@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	// let { title, link, children } = $props();
 	export let title, link;
 </script>
@@ -13,7 +14,7 @@
 				rel="noopener noreferrer"
 			>
 				<slot name="icon">
-					<div class="i-mdi-github mr-2" />
+					<Icon icon="mdi-github" class="mr-2" width="36" />
 				</slot>
 				<h2>{title}</h2>
 			</a>

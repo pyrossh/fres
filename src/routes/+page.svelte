@@ -1,4 +1,5 @@
 <script>
+	import Icon from '@iconify/svelte';
 	import Slide from '$lib/components/Slide.svelte';
 	import PlayStoreIcon from '$lib/assets/icons/playstore.svg?component';
 	import AppStoreIcon from '$lib/assets/icons/appstore.svg?component';
@@ -49,7 +50,7 @@
 		</p>
 		<div>
 			<div class="flex items-center mt-8 mb-4">
-				<div class="i-ant-design:project-outlined text-pink-800 mr-2" />
+				<Icon class="text-pink-800 mr-2" icon="ant-design:project-outlined" width="36" />
 				<h2>Projects</h2>
 			</div>
 			<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
@@ -65,7 +66,7 @@
 					</div>
 					<p>
 						木 Personal website of pyrossh. Built with
-						<span class="children:underline">
+						<span class="*:underline">
 							<a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
 								>sveltekit</a
 							>,
@@ -107,10 +108,10 @@
 				</Slide>
 				<section>
 					<div class="flex items-center">
-						<div class="i-eos-icons:hardware-circuit text-green-800 mr-2" />
+						<Icon class="text-green-800 mr-2" icon="eos-icons:hardware-circuit" width="36" />
 						<h2>Hardware</h2>
 					</div>
-					<ul class="grid gap-2 grid-cols-1 text-center mt-4 children:(bg-gray-200 p-1)">
+					<ul class="grid gap-2 grid-cols-1 text-center mt-4 *:bg-gray-200 *:p-1">
 						<li>Macbook Pro M3 Laptop</li>
 						<li>LG 27 inch Ultrafine Ergo 4K Monitor</li>
 						<li>Logitech Mx Keys Mini Keyboard</li>
@@ -120,10 +121,10 @@
 				</section>
 				<section>
 					<div class="flex items-center">
-						<div class="i-eos-icons:software-outlined text-blue-800 mr-2" />
+						<Icon class="text-blue-800 mr-2" icon="eos-icons:software-outlined" width="36" />
 						<h2>Software</h2>
 					</div>
-					<ul class="grid gap-2 grid-cols-3 text-center mt-4 children:(bg-gray-200 p-2 pb-4)">
+					<ul class="grid gap-2 grid-cols-3 text-center mt-4 *:bg-gray-200 *:p-2 *:pb-4">
 						<li>
 							<a
 								class="soft-link"
@@ -216,10 +217,10 @@
 				</section>
 				<section>
 					<div class="flex items-center">
-						<div class="i-mdi:file-tree-outline text-amber-900 mr-2" />
+						<Icon class="text-amber-900 mr-2" icon="mdi:file-tree-outline" width="36" />
 						<h2>Interests</h2>
 					</div>
-					<ul class="grid gap-2 grid-cols-3 text-center mt-4 children:(bg-slate-100 p-1)">
+					<ul class="grid gap-2 grid-cols-3 text-center mt-4 *:bg-slate-100 *:p-1">
 						<li>HTML</li>
 						<li>CSS</li>
 						<li>Tailwind</li>
@@ -236,11 +237,11 @@
 				</section>
 				<section>
 					<div class="flex items-center">
-						<div class="i-mdi-contact-outline text-cyan-950 mr-2" />
+						<Icon class="text-cyan-950 mr-2" icon="mdi-contact-outline" width="36" />
 						<h2>Contact</h2>
 					</div>
 					<ul
-						class=" grid gap-2 grid-cols-1 text-left mt-4 children:(bg-slate-100 p-2 flex flex-col items-baseline sm:flex-row)"
+						class="grid gap-2 grid-cols-1 text-left mt-4 *:bg-slate-100 *:p-2 *:flex *:flex-col *:items-baseline *:sm:flex-row"
 					>
 						<li>
 							<strong class="mr-2">Email:</strong>
@@ -265,20 +266,20 @@
 	</div>
 </div>
 
-<style>
+<style lang="postcss">
 	h2 {
-		--at-apply: text-xl font-semibold;
+		@apply text-xl font-semibold;
 	}
 
 	section {
-		--at-apply: flex flex-col mt-4 mx-1;
+		@apply flex flex-col mt-4 mx-1;
 	}
 
 	.soft-link {
-		--at-apply: text-base text-blue-900 flex flex-col items-center;
+		@apply text-base text-blue-900 flex flex-col items-center;
 	}
 
 	.soft-icon {
-		--at-apply: w-12 h-12;
+		@apply w-12 h-12;
 	}
 </style>
