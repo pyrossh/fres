@@ -62,7 +62,7 @@
 				</Slide>
 				<Slide title="pyrossh.dev" link="https://github.com/pyrossh/pyrossh.dev">
 					<div slot="icon">
-						<enhanced:img class="mr-2 w-9 rounded-2" src={pyrosshPng} alt="pyrossh website" />
+						<enhanced:img class="mr-2 w-9 rounded-xl" src={pyrosshPng} alt="pyrossh website" />
 					</div>
 					<p>
 						木 Personal website of pyrossh. Built with
@@ -83,7 +83,7 @@
 				</Slide>
 				<Slide title="onlybible.app" link="https://onlybible.app">
 					<div slot="icon">
-						<enhanced:img class="mr-2 w-9 rounded-2" src={onlyBiblePng} alt="Only Bible App" />
+						<enhanced:img class="mr-2 w-9 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
 					</div>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
