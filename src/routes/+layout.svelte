@@ -21,7 +21,7 @@
 	<Header />
 	<main class="flex flex-1 bg-white">
 		<div class="flex flex-1 flex-row justify-center">
-			<div class="flex flex-1 flex-row max-w-5xl mt-4 mb-20 p-4">
+			<div class="flex flex-1 flex-row max-w-5xl my-4 p-4">
 				<!-- {@render children()} -->
 				<slot />
 			</div>
