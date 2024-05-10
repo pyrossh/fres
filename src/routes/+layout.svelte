@@ -19,9 +19,9 @@
 </svelte:head>
 <div class="leading-8 flex flex-1 flex-col text-base sm:leading-7 m-0">
 	<Header />
-	<main class="w-full h-full block bg-white">
-		<div class="flex w-full flex-1 flex-row justify-center">
-			<div class="flex w-full flex-1 flex-row items-center max-w-5xl mt-4 mb-20 p-4">
+	<main class="flex flex-1 bg-white">
+		<div class="flex flex-1 flex-row justify-center">
+			<div class="flex flex-1 flex-row max-w-5xl mt-4 mb-20 p-4">
 				<!-- {@render children()} -->
 				<slot />
 			</div>

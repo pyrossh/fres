@@ -23,5 +23,4 @@
 			</li>
 		{/each}
 	</ul>
-	<div class="h-[24rem]" />
 </div>
