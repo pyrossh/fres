@@ -8,7 +8,7 @@ export default {
       sans: 'system-ui',
       serif: 'system-ui',
       mono: 'monospace',
-      logo: 'Kaiti SC'
+      logo: 'cursive'
     },
     extend: {
       typography: ({ theme }) => ({
