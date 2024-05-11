@@ -1,6 +1,6 @@
 <script>
 	import { page } from '$app/stores';
-	$: isActive = (href) => $page.url.pathname === href;
+	$: isActive = (href) => $page.url.pathname.includes(href);
 </script>
 
 <header>
