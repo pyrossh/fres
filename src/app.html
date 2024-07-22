@@ -1,23 +1,23 @@
 <!doctype html>
 <html lang="en">
+	<head>
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-L1TPX7RGP2"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
 
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-L1TPX7RGP2"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+			gtag('config', 'G-L1TPX7RGP2');
+		</script>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		%sveltekit.head%
+	</head>
 
-    gtag('config', 'G-L1TPX7RGP2');
-  </script>
-  <meta charset="utf-8" />
-  <link rel="icon" type="image/png" href="%sveltekit.assets%/favicon.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  %sveltekit.head%
-</head>
-
-<body class="min-h-screen flex flex-col" data-sveltekit-preload-data="hover">
-  <div class="contents">%sveltekit.body%</div>
-</body>
-
+	<body class="min-h-screen flex flex-col" data-sveltekit-preload-data="hover">
+		<div class="contents">%sveltekit.body%</div>
+	</body>
 </html>

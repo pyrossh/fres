@@ -81,30 +81,13 @@
 					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
-				<Slide title="onlybible.app" link="https://onlybible.app">
+				<Slide title="onlybible.app" link="/only-bible-app" isExternal={false}>
 					<div slot="icon">
 						<enhanced:img class="mr-2 w-9 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
 					</div>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
 					</p>
-					<div class="flex mt-4">
-						<a
-							class="mr-2"
-							href="https://play.google.com/store/apps/details?id=sh.pyros.only_bible_app"
-							rel="noopener noreferrer"
-							target="blank"
-						>
-							<PlayStoreIcon class="w-32" aria-label="Get it on Google Play" />
-						</a>
-						<a
-							href="https://apps.apple.com/us/app/only-bible-app/id6467606465?itsct=apps_box_badge&amp;itscg=30200"
-							rel="noopener noreferrer"
-							target="blank"
-						>
-							<AppStoreIcon class="w-32" aria-label="Download on the App Store" />
-						</a>
-					</div>
 				</Slide>
 				<section>
 					<div class="flex items-center">

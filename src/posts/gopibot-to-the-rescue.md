@@ -42,7 +42,7 @@ const bot_token = process.env.SLACK_BOT_TOKEN;
 
 const rtm = new RtmClient(bot_token);
 const COMMANDS = {
-	web: 'ssh -i qa.pem user@url docker pull image-name && docker rm -f container-id && docker run -d image-name'
+	web: 'ssh -i qa.pem user@url docker pull image-name && docker rm -f container-id && docker run -d image-name',
 };
 let deploymentInProgress = false;
 let counter = 0;
@@ -56,7 +56,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (event) => {
 	) {
 		return rtm.sendMessage(
 			'Please dont change the message and expect me to correct your past mistakes',
-			event.channel
+			event.channel,
 		);
 	}
 	if (event.subtype) {
@@ -69,7 +69,7 @@ rtm.on(RTM_EVENTS.MESSAGE, (event) => {
 				counter = 0;
 				return rtm.sendMessage(
 					"Stop bugging me noob or I'll tell to raise you bugs",
-					event.channel
+					event.channel,
 				);
 			}
 			return rtm.sendMessage('I am already processing a deploy request please wait', event.channel);
@@ -108,14 +108,14 @@ rtm.on(RTM_EVENTS.MESSAGE, (event) => {
 				counter = 0;
 				return rtm.sendMessage(
 					"Stop bugging me noob or I'll tell <@U30TXGLS1|gopi> to raise you bugs",
-					event.channel
+					event.channel,
 				);
 			}
 			return rtm.sendMessage(
 				`command '${event.text} ' not found.You need to specify one of these commands [${COMMANDS.map(
-					(v, k) => k
+					(v, k) => k,
 				).join(',')} ]`,
-				event.channel
+				event.channel,
 			);
 		}
 	}
