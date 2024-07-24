@@ -49,7 +49,7 @@
 		<div
 			class="not-prose flex items-center sm:flex-row [&>picture]:flex [&>picture]:justify-center sm:[&>picture]:justify-end mt-10 sm:mt-0"
 		>
-			<enhanced:img class="w-9/12" src={lightPng} alt="app screenshot" />
+			<enhanced:img class="w-6/12" src={lightPng} alt="app screenshot" />
 		</div>
 	</div>
 </div>
