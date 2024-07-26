@@ -1,8 +1,8 @@
 <script>
 	import PlayStoreIcon from '$lib/assets/icons/playstore.svg?component';
 	import AppStoreIcon from '$lib/assets/icons/appstore.svg?component';
-	import lightPng from '$lib/assets/images/light.png?enhanced';
-	import logoPng from '$lib/assets/logos/onlybible.png';
+	import AppIconPng from '$lib/assets/images/app_icon.png';
+	import AppImagePng from '$lib/assets/images/app_image.png?enhanced';
 	import Intro from '$lib/components/Intro.svelte';
 </script>
 
@@ -13,8 +13,8 @@
 
 <div class="flex flex-col mx-4">
 	<div class="flex flex-1 flex-col sm:flex-row items-center sm:items-start">
-		<div class="flex flex-col items-center sm:items-start sm:mt-10">
-			<img class="mr-2 w-40 m-0 rounded-xl" src={logoPng} alt="Only Bible App" />
+		<div class="flex flex-col items-center sm:items-start">
+			<img class="mr-2 w-40 m-0 rounded-xl" src={AppIconPng} alt="Only Bible App" />
 			<div
 				class="flex flex-1 items-center text-5xl font-semibold no-underline focus:outline-none focus:ring-1 focus:ring-gray-600"
 				aria-label="Brand"
@@ -49,7 +49,7 @@
 		<div
 			class="not-prose flex items-center sm:flex-row [&>picture]:flex [&>picture]:justify-center sm:[&>picture]:justify-end mt-10 sm:mt-0"
 		>
-			<enhanced:img class="w-6/12" src={lightPng} alt="app screenshot" />
+			<enhanced:img class="w-6/12" src={AppImagePng} alt="app screenshot" />
 		</div>
 	</div>
 </div>

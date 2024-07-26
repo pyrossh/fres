@@ -2,7 +2,10 @@
 	The only bible app you will ever need
 </h1>
 <div class="text-center sm:text-left flex flex-col text-lg sm:mt-5">
-	<span>No ads,</span>
-	<span>No in-app purchases,</span>
-	<span>No distractions.</span>
+	<p>No ads</p>
+	<p>No in-app purchases</p>
+	<p>No distractions</p>
+	<p>Offline First</p>
+	<p>Optimized reading</p>
+	<p>Online Audio Playback</p>
 </div>
