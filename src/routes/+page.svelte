@@ -10,7 +10,7 @@
 	import fish from '$lib/assets/logos/fish.png?enhanced';
 	import iterm from '$lib/assets/logos/iterm.png?enhanced';
 	import slurp from '$lib/assets/logos/slurp.png?enhanced';
-	import curve from '$lib/assets/logos/curve.png?enhanced';
+	import inkscape from '$lib/assets/logos/inkscape.png?enhanced';
 </script>
 
 <svelte:head>
@@ -189,12 +189,12 @@
 						<li>
 							<a
 								class="soft-link"
-								href="https://www.vectornator.io"
+								href="https://inkscape.org/"
 								target="_blank"
 								rel="noopener noreferrer"
 							>
-								Curve
-								<enhanced:img class="soft-icon" src={curve} alt="curve" />
+								Inkscape
+								<enhanced:img class="soft-icon" src={inkscape} alt="inkscape" />
 							</a>
 						</li>
 					</ul>
