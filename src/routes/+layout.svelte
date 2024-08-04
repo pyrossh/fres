@@ -7,7 +7,7 @@
 
 	const { page } = getStores();
 	let url = `https://pyrossh.dev${$page.url.pathname}`;
-	const isAppPage = $page.url.pathname.includes('only-bible-app');
+	$: isAppPage = $page.url.pathname.includes('only-bible-app');
 </script>
 
 <svelte:head>
