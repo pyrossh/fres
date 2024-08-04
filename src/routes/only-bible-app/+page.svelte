@@ -3,6 +3,7 @@
 	import AppStoreIcon from '$lib/assets/icons/appstore.svg?component';
 	import AppIconPng from '$lib/assets/images/app_icon.png';
 	import AppImagePng from '$lib/assets/images/app_image.png?enhanced';
+	import Copyright from '$lib/components/Copyright.svelte';
 </script>
 
 <svelte:head>
@@ -79,14 +80,7 @@
 			<enhanced:img class="w-9/12" src={AppImagePng} alt="app screenshot" />
 		</div>
 	</div>
-	<footer class="text-center py-5 mt-20">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<p class="text-sm text-gray-300 dark:text-neutral-400">
-				Copyright © 2024 <a
-					class="decoration-2 underline underline-offset-2 font-medium hover:text-gray-400 hover:decoration-gray-400"
-					href="https://github.com/pyrossh">pyrossh</a
-				>
-			</p>
-		</div>
+	<footer class="not-prose text-center py-5 mt-20">
+		<Copyright />
 	</footer>
 </main>
