@@ -1,9 +1,7 @@
 <script>
 	import Icon from '@iconify/svelte';
 	import Slide from '$lib/components/Slide.svelte';
-	import PlayStoreIcon from '$lib/assets/icons/playstore.svg?component';
-	import AppStoreIcon from '$lib/assets/icons/appstore.svg?component';
-	import onlyBiblePng from '$lib/assets/logos/onlybible.png?enhanced';
+	import onlyBiblePng from '$lib/assets/images/app_icon.png?enhanced';
 	import pyrosshPng from '$lib/assets/logos/pyrossh.png?enhanced';
 	import stats from '$lib/assets/logos/stats.png?enhanced';
 	import brave from '$lib/assets/logos/brave.png?enhanced';
@@ -77,13 +75,16 @@
 						</span>
 					</p>
 				</Slide>
-				<Slide title="pacos.sh" link="https://github.com/pyrossh/pacos.sh">
-					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
+				<Slide title="pacos" link="https://github.com/pyrossh/pacos">
+					<p>
+						👾 A pacman inspired statically typed, functional programming language inspired by rust,
+						koka.
+					</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
-				<Slide title="onlybible.app" link="/only-bible-app" isExternal={false}>
+				<Slide title="Only Bible App" link="/only-bible-app" isExternal={false}>
 					<div slot="icon">
-						<enhanced:img class="mr-2 w-9 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
+						<enhanced:img class="mr-2 w-12 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
 					</div>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
