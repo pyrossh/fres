@@ -7,6 +7,7 @@
 
 	const { page } = getStores();
 	let url = `https://pyrossh.dev${$page.url.pathname}`;
+	const isAppPage = $page.url.pathname.includes('only-bible-app');
 </script>
 
 <svelte:head>
@@ -17,15 +18,19 @@
 	<meta property="og:type" content="website" />
 	<meta property="og:url" content={url} />
 </svelte:head>
-<div class="leading-8 flex flex-1 flex-col text-base sm:leading-7 m-0">
-	<Header />
-	<main class="flex flex-1 bg-white">
-		<div class="flex flex-1 flex-row justify-center">
-			<div class="flex flex-1 flex-row max-w-5xl my-4 p-4">
-				<!-- {@render children()} -->
-				<slot />
+{#if !isAppPage}
+	<div class="leading-8 flex flex-1 flex-col text-base sm:leading-7 m-0">
+		<Header />
+		<main class="flex flex-1 bg-white">
+			<div class="flex flex-1 flex-row justify-center">
+				<div class="flex flex-1 flex-row max-w-5xl my-4 p-4">
+					<!-- {@render children()} -->
+					<slot />
+				</div>
 			</div>
-		</div>
-	</main>
-	<Footer />
-</div>
+		</main>
+		<Footer />
+	</div>
+{:else}
+	<slot />
+{/if}

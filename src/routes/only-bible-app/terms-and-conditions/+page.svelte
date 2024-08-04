@@ -2,7 +2,7 @@
 	<title>Terms and Conditions | Only Bible App</title>
 </svelte:head>
 
-<main class="mx-4 pb-10">
+<main class="mx-4 pb-10 text-gray-300">
 	<h1 class="text-center text-3xl">Terms and Conditions</h1>
 	<p>
 		By downloading or using the app, these terms will automatically apply to you – you should make
@@ -31,8 +31,8 @@
 	I may update our Terms and conditions from time to time. Thus, you are advised to review this page
 	periodically for any changes. I will notify you of any changes by posting the new Terms and conditions
 	on this page.
-	<p>This policy is effective as of <strong>2023-09-08</strong></p>
+	<p>This policy is effective as of <strong class="text-gray-300">2023-09-08</strong></p>
 	<h4>Contact Us</h4>
 	If you have any questions or suggestions for us you can contact us at
-	<strong>pyros2097@gmail.com</strong>
+	<strong class="text-gray-300">pyros2097@gmail.com</strong>
 </main>
