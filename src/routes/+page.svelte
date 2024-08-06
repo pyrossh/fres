@@ -88,6 +88,7 @@
 					</div>
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
+						Works completely offline.
 					</p>
 				</Slide>
 				<section>

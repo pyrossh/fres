@@ -2,7 +2,7 @@
 	<title>Privacy Policy | Only Bible App</title>
 </svelte:head>
 
-<main class="mx-4 text-gray-300">
+<main class="text-gray-300 mt-10">
 	<h1 class="text-center">Privacy Policy</h1>
 	<p>
 		Only Bible App does not collect any information about you or your usage of the app. It does not

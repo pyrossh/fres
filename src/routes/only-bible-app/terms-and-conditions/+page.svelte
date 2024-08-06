@@ -2,7 +2,7 @@
 	<title>Terms and Conditions | Only Bible App</title>
 </svelte:head>
 
-<main class="mx-4 pb-10 text-gray-300">
+<main class="pb-10 text-gray-300 mt-10">
 	<h1 class="text-center text-3xl">Terms and Conditions</h1>
 	<p>
 		By downloading or using the app, these terms will automatically apply to you – you should make
