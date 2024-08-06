@@ -4,7 +4,7 @@
 	import onlyBiblePng from '$lib/assets/images/app_icon.png?enhanced';
 	import pyrosshPng from '$lib/assets/logos/pyrossh.png?enhanced';
 	import stats from '$lib/assets/logos/stats.png?enhanced';
-	import brave from '$lib/assets/logos/brave.png?enhanced';
+	import fleet from '$lib/assets/logos/fleet.png?enhanced';
 	import code from '$lib/assets/logos/code.png?enhanced';
 	import helix from '$lib/assets/logos/helix.png?enhanced';
 	import fish from '$lib/assets/logos/fish.png?enhanced';
@@ -68,18 +68,18 @@
 							<a href="https://kit.svelte.dev/" target="_blank" rel="noopener noreferrer"
 								>sveltekit</a
 							>,
-							<a href="https://unocss.dev/" target="_blank" rel="noopener noreferrer">unocss</a>,
+							<a href="https://tailwindcss.com/" target="_blank" rel="noopener noreferrer"
+								>tailwindcss</a
+							>,
 							<a href="https://iconify.design/" target="_blank" rel="noopener noreferrer">iconify</a
 							>,
+							<a href="https://shiki.matsu.io/" target="_blank" rel="noopener noreferrer">shiki</a>,
 							<a href="https://vitejs.dev/" target="_blank" rel="noopener noreferrer">vite</a>.
 						</span>
 					</p>
 				</Slide>
 				<Slide title="pacos" link="https://github.com/pyrossh/pacos">
-					<p>
-						👾 A pacman inspired statically typed, functional programming language inspired by rust,
-						koka.
-					</p>
+					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
 				<Slide title="Only Bible App" link="/only-bible-app" isExternal={false}>
@@ -90,6 +90,7 @@
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
 						Works completely offline.
 					</p>
+					<!-- <p>11 Indian, 12 European, and 8 Asian languages available.</p> -->
 				</Slide>
 				<section>
 					<div class="flex items-center">
@@ -124,17 +125,6 @@
 						<li>
 							<a
 								class="soft-link"
-								href="https://github.com/brave/brave-browser"
-								target="_blank"
-								rel="noopener noreferrer"
-							>
-								Brave
-								<enhanced:img class="soft-icon" src={brave} alt="Brave" />
-							</a>
-						</li>
-						<li>
-							<a
-								class="soft-link"
 								href="https://github.com/microsoft/vscode"
 								target="_blank"
 								rel="noopener noreferrer"
@@ -152,6 +142,17 @@
 							>
 								Helix
 								<enhanced:img class="soft-icon" src={helix} alt="Helix" />
+							</a>
+						</li>
+						<li>
+							<a
+								class="soft-link"
+								href="https://www.jetbrains.com/fleet/"
+								target="_blank"
+								rel="noopener noreferrer"
+							>
+								Fleet
+								<enhanced:img class="soft-icon" src={fleet} alt="fleet" />
 							</a>
 						</li>
 						<li>
@@ -211,7 +212,7 @@
 						<li>Tailwind</li>
 						<li>Javascript</li>
 						<li>React</li>
-						<li>Flutter</li>
+						<li>Compose</li>
 						<li>Go</li>
 						<li>Rust</li>
 						<li>Kotlin</li>

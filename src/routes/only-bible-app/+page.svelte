@@ -24,6 +24,7 @@
 				<span>No in-app purchases,</span>
 				<span>No distractions.</span>
 				<span>Works completely offline.</span>
+				<!-- <span>11 Indian, 12 European, and 8 Asian languages available.</span> -->
 			</div>
 		</div>
 		<div class="flex flex-col items-center sm:items-start">

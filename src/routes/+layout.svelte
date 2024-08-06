@@ -34,3 +34,9 @@
 {:else}
 	<slot />
 {/if}
+
+<style lang="postcss">
+	:global(html) {
+		background-color: black;
+	}
+</style>
