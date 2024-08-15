@@ -78,8 +78,8 @@
 						</span>
 					</p>
 				</Slide>
-				<Slide title="pacos" link="https://github.com/pyrossh/pacos">
-					<p>👾 A statically typed, functional programming language inspired by rust, koka.</p>
+				<Slide title="kestrel" link="https://github.com/pyrossh/kestrel">
+					<p>A statically typed, functional programming language inspired by rust, koka.</p>
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
 				<Slide title="Only Bible App" link="/only-bible-app" isExternal={false}>
