@@ -11,7 +11,7 @@ const mdsvexOptions = {
 		[
 			github,
 			{
-				repository: 'https://github.com/pyrossh/pyros.sh',
+				repository: 'https://github.com/pyrossh/pyrossh.dev',
 			},
 		],
 	],
@@ -19,7 +19,7 @@ const mdsvexOptions = {
 		highlighter: async (code, lang = 'text') => {
 			const highlighter = await getHighlighter({
 				themes: ['dracula'],
-				langs: ['javascript', 'typescript', 'go'],
+				langs: ['javascript', 'typescript', 'go', 'shell', 'tsx'],
 			});
 			await highlighter.loadLanguage('javascript', 'typescript', 'go');
 			const html = escapeSvelte(highlighter.codeToHtml(code, { lang, theme: 'dracula' }));

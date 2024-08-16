@@ -20,12 +20,41 @@ export default {
 						h2: {
 							color: theme('colors.black'),
 						},
+						h3: {
+							color: theme('colors.black'),
+						},
 						pre: {
 							padding: '16px',
 							borderRadius: '16px',
 							fontSize: '0.8rem',
 							fontFamily: 'monospace',
 						},
+						'code::before': {
+							content: '&nbsp;&nbsp;',
+						},
+						'code::after': {
+							content: '&nbsp;&nbsp;',
+						},
+						code: {
+							color: '#d14',
+							background: '#f6f6f6',
+							border: '1px solid #e1e1e8',
+							wordWrap: 'break-word',
+							boxDecorationBreak: 'clone',
+							padding: '2px 4px',
+							borderRadius: '.2rem',
+							fontWeight: 400,
+							fontSize: '0.8rem',
+						},
+						blockquote: {
+							background: '#f8ffaa',
+							fontWeight: 600,
+							fontStyle: 'normal',
+							padding: '0.4rem',
+						},
+						'blockquote p:first-of-type': { margin: 0 },
+						'blockquote p:first-of-type::before': { content: 'none' },
+						'blockquote p:first-of-type::after': { content: 'none' },
 						'--tw-prose-body': theme('colors.black'),
 						'--tw-prose-headings': theme('colors.gray[100]'),
 						'--tw-prose-lead': theme('colors.black'),
