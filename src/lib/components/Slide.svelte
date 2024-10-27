@@ -28,7 +28,6 @@
 				{/if}
 				<h2>{title}</h2>
 			</a>
-			<!-- {@render children()} -->
 			{@render children?.()}
 		</div>
 	</div>
