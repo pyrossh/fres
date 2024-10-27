@@ -1,6 +1,6 @@
 <script>
 	import { formatDateLong } from '$lib/dateUtils';
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>
@@ -32,6 +32,6 @@
 		</div>
 	</hgroup>
 	<div class="prose">
-		<svelte:component this={data.content} />
+		<data.content />
 	</div>
 </article>

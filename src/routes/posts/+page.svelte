@@ -1,6 +1,6 @@
 <script>
 	import { formatDate } from '$lib/dateUtils';
-	export let data;
+	let { data } = $props();
 </script>
 
 <svelte:head>

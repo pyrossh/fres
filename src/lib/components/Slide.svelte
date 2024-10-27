@@ -1,9 +1,17 @@
 <script>
 	import Icon from '@iconify/svelte';
-	// let { title, link, children } = $props();
-	export let title,
-		link,
-		isExternal = true;
+
+	/**
+	 * @typedef {Object} Props
+	 * @property {any} title - let { title, link, children } = $props();
+	 * @property {any} link - let { title, link, children } = $props();
+	 * @property {boolean} [isExternal] - let { title, link, children } = $props();
+	 * @property {import('svelte').Snippet} [icon]
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { title, link, isExternal = true, icon, children } = $props();
 </script>
 
 <article class="overflow-hidden rounded bg-[#f0ede2]">
@@ -15,13 +23,13 @@
 				target={isExternal ? '_blank' : ''}
 				rel={isExternal ? 'noopener noreferrer' : ''}
 			>
-				<slot name="icon">
+				{#if icon}{@render icon()}{:else}
 					<Icon icon="mdi-github" class="mr-2" width="36" />
-				</slot>
+				{/if}
 				<h2>{title}</h2>
 			</a>
 			<!-- {@render children()} -->
-			<slot />
+			{@render children?.()}
 		</div>
 	</div>
 </article>

@@ -1,5 +1,12 @@
 <script>
 	import Copyright from '$lib/components/Copyright.svelte';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
 </script>
 
 <div class="prose h-full sm:w-6/12 mx-auto">
@@ -27,7 +34,7 @@
 		</nav>
 	</header>
 	<main class="flex flex-col mx-4 mt-10 sm:mt-0">
-		<slot />
+		{@render children?.()}
 	</main>
 	<footer class="not-prose text-center py-5 mt-20">
 		<Copyright />

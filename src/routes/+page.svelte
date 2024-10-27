@@ -59,9 +59,11 @@
 					</p>
 				</Slide>
 				<Slide title="pyrossh.dev" link="https://github.com/pyrossh/pyrossh.dev">
-					<div slot="icon">
-						<enhanced:img class="mr-2 w-9 rounded-xl" src={pyrosshPng} alt="pyrossh website" />
-					</div>
+					{#snippet icon()}
+						<div>
+							<enhanced:img class="mr-2 w-9 rounded-xl" src={pyrosshPng} alt="pyrossh website" />
+						</div>
+					{/snippet}
 					<p>
 						木 Personal website of pyrossh. Built with
 						<span class="*:underline">
@@ -83,9 +85,11 @@
 					<p>WIP to support compilation to WASM.</p>
 				</Slide>
 				<Slide title="Only Bible App" link="/only-bible-app" isExternal={false}>
-					<div slot="icon">
-						<enhanced:img class="mr-2 w-12 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
-					</div>
+					{#snippet icon()}
+						<div>
+							<enhanced:img class="mr-2 w-12 rounded-xl" src={onlyBiblePng} alt="Only Bible App" />
+						</div>
+					{/snippet}
 					<p>
 						The only bible app you will ever need. No ads, No in-app purchases, No distractions.
 						Works completely offline.

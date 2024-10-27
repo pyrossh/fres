@@ -2,7 +2,7 @@ import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/vite-plugin-svelte';
 import { mdsvex, escapeSvelte } from 'mdsvex';
 import github from 'remark-github';
-import { getHighlighter } from 'shiki';
+import { getSingletonHighlighter } from 'shiki';
 
 /** @type {import('mdsvex').MdsvexOptions} */
 const mdsvexOptions = {
@@ -17,7 +17,7 @@ const mdsvexOptions = {
 	],
 	highlight: {
 		highlighter: async (code, lang = 'text') => {
-			const highlighter = await getHighlighter({
+			const highlighter = await getSingletonHighlighter({
 				themes: ['dracula'],
 				langs: ['javascript', 'typescript', 'go', 'shell', 'tsx'],
 			});
@@ -38,13 +38,13 @@ const config = {
 			fallback: '404.html',
 		}),
 	},
-  vitePlugin: {
-    inspector: {
-      toggleKeyCombo: 'meta-shift',
-      showToggleButton: 'always',
-      toggleButtonPos: 'bottom-right'
-    }
-  }
+	vitePlugin: {
+		inspector: {
+			toggleKeyCombo: 'meta-shift',
+			showToggleButton: 'always',
+			toggleButtonPos: 'bottom-right',
+		},
+	},
 };
 
 export default config;

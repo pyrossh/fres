@@ -3,11 +3,18 @@
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
 	import '../app.css';
+	/**
+	 * @typedef {Object} Props
+	 * @property {import('svelte').Snippet} [children]
+	 */
+
+	/** @type {Props} */
+	let { children } = $props();
 	// let { children } = $props();
 
 	const { page } = getStores();
 	let url = `https://pyrossh.dev${$page.url.pathname}`;
-	$: isAppPage = $page.url.pathname.includes('only-bible-app');
+	let isAppPage = $derived($page.url.pathname.includes('only-bible-app'));
 </script>
 
 <svelte:head>
@@ -25,14 +32,14 @@
 			<div class="flex flex-1 flex-row justify-center">
 				<div class="flex flex-1 flex-row max-w-5xl my-4 p-4">
 					<!-- {@render children()} -->
-					<slot />
+					{@render children?.()}
 				</div>
 			</div>
 		</main>
 		<Footer />
 	</div>
 {:else}
-	<slot />
+	{@render children?.()}
 {/if}
 
 <style lang="postcss">
